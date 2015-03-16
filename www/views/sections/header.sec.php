@@ -10,36 +10,39 @@
 
 	<!-- Logo -->
 	<h1>
-		<a href="./" id="logo">Net Production K&ouml;be & Co</a>
+		<a href="./" id="logo">
+			Net Production K&ouml;be & Co
+		</a>
 	</h1>
 
 	<!-- Nav -->
 	<nav id="nav">
-		<ul>
-			<li class="current"><a href="index.html">Home</a></li>
+		<ul class="container">
 			<li>
-				<a href="">Dropdown</a>
-				<ul>
-					<li><a href="#">Lorem dolor</a></li>
-					<li><a href="#">Magna phasellus</a></li>
-					<li><a href="#">Etiam sed tempus</a></li>
-					<li>
-						<a href="">Submenu</a>
-						<ul>
-							<li><a href="#">Lorem dolor</a></li>
-							<li><a href="#">Phasellus magna</a></li>
-							<li><a href="#">Magna phasellus</a></li>
-							<li><a href="#">Etiam nisl</a></li>
-							<li><a href="#">Veroeros feugiat</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Veroeros feugiat</a></li>
-				</ul>
+				<a href="#home">
+					Home
+				</a>
 			</li>
-			<li><a href="#"># Item</a></li>
-			<li><a href="#"># Item</a></li>
-			<li><a href="#"># Item</a></li>
-			<li><a href="#"># Item</a></li>
+			<li>
+				<a href="#projects">
+					Projects
+				</a>
+			</li>
+			<li>
+				<a href="#commitments">
+					Commitments
+				</a>
+			</li>
+			<li>
+				<a href="#team">
+					Team
+				</a>
+			</li>
+			<li>
+				<a href="#contact">
+					Contact
+				</a>
+			</li>
 		</ul>
 	</nav>
 </div>
