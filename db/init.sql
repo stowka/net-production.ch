@@ -1,0 +1,105 @@
+DROP DATABASE IF EXISTS "netprod"; 
+CREATE DATABASE "netprod" CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE "netprod";
+
+CREATE TABLE "type"(
+	"id" INT AUTO_INCREMENT,
+	"label" VARCHAR(31) NOT NULL,
+	PRIMARY KEY ("id")
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+
+CREATE TABLE "language"(
+	"id" VARCHAR(5) NOT NULL,
+	"label" VARCHAR(31) NOT NULL,
+	PRIMARY KEY ("id")
+) ENGINE=InnoDB DEFAULT CHARSET="utf8";
+
+
+CREATE TABLE "project"(
+	"id" INT AUTO_INCREMENT,
+	"title" VARCHAR(31) NOT NULL,
+	"description" VARCHAR(2047) NOT NULL,
+	"public" BOOLEAN DEFAULT 0,
+	"type" INT NOT NULL,
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_project_type"
+		FOREIGN KEY ("type")
+		REFERENCES type("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE,
+	CONSTRAINT "fk_project_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+CREATE TABLE "home"(
+	"id" INT AUTO_INCREMENT,
+	"text" VARCHAR(1047) NOT NULL,
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_home_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+CREATE TABLE "team"(
+	"id" INT AUTO_INCREMENT,
+	"name" VARCHAR(31) NOT NULL,
+	"biography" VARCHAR(2047) NOT NULL, 
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_team_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+CREATE TABLE "commitment"(
+	"id" INT AUTO_INCREMENT,
+	"title" VARCHAR(31) NOT NULL,
+	"description" LONGTEXT NOT NULL,
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_commitment_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+CREATE TABLE "reason"(
+	"id" INT AUTO_INCREMENT,
+	"label" VARCHAR(31) NOT NULL,
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_reason_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
+
+CREATE TABLE "contact"(
+	"id" INT AUTO_INCREMENT,
+	"name_ph" VARCHAR(63) NOT NULL,
+	"mail_ph" VARCHAR(63) NOT NULL,
+	"phone_ph" VARCHAR(63) NOT NULL,
+	"msg_ph" VARCHAR(63) NOT NULL,
+	"button" VARCHAR(63) NOT NULL,
+	"required" VARCHAR(63) NOT NULL,
+	"language" VARCHAR(5) NOT NULL,
+	PRIMARY KEY ("id"),
+	CONSTRAINT "fk_contact_language"
+		FOREIGN KEY ("language")
+		REFERENCES language("id")
+		ON UPDATE CASCADE
+		ON DELETE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET="utf8";
