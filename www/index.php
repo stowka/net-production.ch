@@ -13,7 +13,7 @@
 	session_start();
 
 	# PHPMailer
-	require_once 'lib/phpmailer.class.php';/**/
+	require_once 'lib/phpmailer.class.php';
 
 	# Models
 	function __autoload($model) {

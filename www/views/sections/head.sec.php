@@ -2,25 +2,29 @@
 	/**
 	 * Default head section
 	 * @author Antoine De Gieter
+	 * @copyright Net Production Köbe & Co
 	 */
 ?>
 
 <head>
 	<meta charset="utf-8">	
 	<title><?php echo DEFAULT_TITLE; ?></title>
-	<!-- Uncomment to activate mobile display -->
 	<!-- meta name="viewport" content="width=device-width, initial-scale=1.0"-->
 
 	<!-- STYLESHEETS -->
-	<link rel="stylesheet" type="text/css" href="global/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="global/css/main.css">
+	<noscript>
+		<link rel="stylesheet" href="global/css/skel.css" />
+		<link rel="stylesheet" href="global/css/style.css" />
+		<link rel="stylesheet" href="global/css/style-wide.css" />
+	</noscript>
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		
 	<!-- JAVASCRIPT -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="global/js/bootstrap.min.js"></script>
-
-	<!-- Uncomment to activate fancybox -->
-	<!--script type="text/javascript" src="global/js/jquery.fancybox.js"></script>
-	<script type="text/javascript" src="global/js/jquery.fancybox.pack.js"></script-->
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="global/js/jquery.min.js"></script>
+	<script src="global/js/jquery.dropotron.min.js"></script>
+	<script src="global/js/skel.min.js"></script>
+	<script src="global/js/skel-layers.min.js"></script>
+	<script src="global/js/init.js"></script>
 </head>

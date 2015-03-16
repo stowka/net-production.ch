@@ -11,18 +11,17 @@
 	<?php includeSection('head') ?>
 
 	<body>
-		<?php includeSection('menu'); ?>
+		<?php includeSection('header'); ?>
+		<?php includeSection('banner'); ?>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-					<p>
-						Start here...
-					</p>
-				</div>
-			</div>
-		</div>
+		<?php includeSection('highlights'); ?>
 
-		<?php includeSection('footer') ?>
+		<?php includeSection('gigantic-heading'); ?>
+
+		<?php includeSection('posts'); ?>
+
+		<?php includeSection('CTA'); ?>
+
+		<?php includeSection('footer'); ?>
 	</body>
 </html>
