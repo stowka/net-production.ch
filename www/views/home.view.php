@@ -11,19 +11,19 @@
 	<?php includeSection('head') ?>
 
 	<body>
-		<?php includeSection('header'); ?>
+		<?php includeSection('menu'); ?>
 		<?php includeSection('banner'); ?>
 
-		<?php includeSection('highlights'); ?>
+		<?php includeSection('commitments'); ?>
 
-		<?php includeSection('gigantic-heading'); ?>
+		<?php includeSection('giant'); ?>
 
 		<?php includeSection('projects'); ?>
 
 		<?php includeSection('posts'); ?>
 
-		<?php includeSection('CTA'); ?>
+		<?php includeSection('team'); ?>
 
-		<?php includeSection('footer'); ?>
+		<?php includeSection('contact'); ?>
 	</body>
 </html>

@@ -1,5 +1,5 @@
 <!-- Portfolio -->
-	<div class="wrapper style3">
+	<div class="wrapper style3" id="projects">
 		<article id="portfolio">
 			<header>
 				<h2>Posuere quis curae vis odio aliquet.</h2>
