@@ -35,7 +35,7 @@
 			</section>
 			<section class="6u 12u(narrower)">
 				<h3>Ata Mi Felis</h3>
-				<form method="post">
+				<form method="post" action="./">
 					<div class="row 50%">
 						<div class="6u 12u(mobilep)">
 							<input type="text" name="name" class="form-control" id="name" placeholder="* Votre nom" />
@@ -47,7 +47,7 @@
 						</div>
 
 						<div class="6u 12u(mobilep)">
-							<input type="notel" name="notel" class="form-control" placeholder="Votre n° de telephone" />
+							<input type="tel" name="tel" class="form-control" placeholder="Votre n° de telephone" />
 						</div>
 					</div>
 					<div class="row 50%">
@@ -61,14 +61,13 @@
 					<div id="trait"></div>
 					<div class="row 50%">
 						<div class="12u">
-							<textarea name="message" class="form-control" placeholder="Message" rows="5" id="message" style="resize: none;">
-							</textarea>
+							<textarea name="message" class="form-control" placeholder="Message" rows="5" id="message" style="resize: none;"></textarea>
 						</div>
 					</div>
 					<div class="row 50%">
 						<div class="12u">
 							<ul class="actions">
-								<li><input type="submit" class="button alt" value="Send Message" /></li>
+								<li><button type="submit" class="button alt">Send message</button></li>
 							</ul>
 						</div>
 					</div>
