@@ -7,7 +7,7 @@
 ?>
 <!-- Footer -->
 <div id="footer">
-	<div class="container">
+	<div class="container" id="contacts">
 		<div class="row">
 			<section class="3u 6u(narrower) 12u$(mobilep)">
 				<h3>Augue mi Morbi</h3>
@@ -35,18 +35,34 @@
 			</section>
 			<section class="6u 12u(narrower)">
 				<h3>Ata Mi Felis</h3>
-				<form>
+				<form method="post">
 					<div class="row 50%">
 						<div class="6u 12u(mobilep)">
-							<input type="text" name="name" id="name" placeholder="Name" />
-						</div>
-						<div class="6u 12u(mobilep)">
-							<input type="email" name="email" id="email" placeholder="Email" />
+							<input type="text" name="name" class="form-control" id="name" placeholder="* Votre nom" />
 						</div>
 					</div>
 					<div class="row 50%">
+						<div class="6u 12u(mobilep)">
+							<input type="email" name="email" class="form-control" placeholder="* Votre email" />
+						</div>
+
+						<div class="6u 12u(mobilep)">
+							<input type="notel" name="notel" class="form-control" placeholder="Votre n° de telephone" />
+						</div>
+					</div>
+					<div class="row 50%">
+						<div class="6u 12u(mobilep)">
+							<select name="reason" class="form-control" id="reason">
+								<option value="Commander un devis">Commander un devis</option>
+								<option value="Travailler avec nous">Travailler avec nous</option>
+							</select>
+						</div>
+					</div>
+					<div id="trait"></div>
+					<div class="row 50%">
 						<div class="12u">
-							<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+							<textarea name="message" class="form-control" placeholder="Message" rows="5" id="message" style="resize: none;">
+							</textarea>
 						</div>
 					</div>
 					<div class="row 50%">

@@ -6,7 +6,7 @@
 	 */
 ?>
 <!-- Gigantic Heading -->
-<section class="wrapper style2">
+<section class="wrapper style2" id="commitments">
 	<div class="container">
 		<header class="major">
 			<h2>Vel accumsan natoque ata non mus sem volutpat</h2>

@@ -12,12 +12,12 @@
 	<!-- meta name="viewport" content="width=device-width, initial-scale=1.0"-->
 
 	<!-- STYLESHEETS -->
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-	<noscript>
-		<link rel="stylesheet" href="global/css/skel.css" />
-		<link rel="stylesheet" href="global/css/style.css" />
-		<link rel="stylesheet" href="global/css/style-wide.css" />
-	</noscript>
+	<?php//<!--link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'-->?>
+
+		<link rel="stylesheet" href="http://localhost:82/net-production.ch/www/global/css/skel.css" />
+		<link rel="stylesheet" href="http://localhost:82/net-production.ch/www/global/css/style.css" />
+		<link rel="stylesheet" href="http://localhost:82/net-production.ch/www/global/css/style-wide.css" />
+
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		
 	<!-- JAVASCRIPT -->

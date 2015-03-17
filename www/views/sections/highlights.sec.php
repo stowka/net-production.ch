@@ -6,7 +6,7 @@
 	 */
 ?>
 <!-- Highlights -->
-<section class="wrapper style1">
+<section class="wrapper style1" id="projects">
 	<div class="container">
 		<div class="row 200%">
 			<section class="4u 12u(narrower)">

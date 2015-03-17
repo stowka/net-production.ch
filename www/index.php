@@ -6,22 +6,6 @@
 	 */
 
 	require_once 'config/config.inc.php';
-	require_once 'lib/functions.inc.php';
-
-	# Sessions
-	session_save_path();
-	session_start();
-
-	# PHPMailer
-	require_once 'lib/phpmailer.class.php';
-
-	# Models
-	function __autoload($model) {
-		if (file_exists(DEFAULT_MODEL_PATH . strtolower($model) . DEFAULT_MODEL_EXTENSION))
-			includeModel($model);
-		else
-			throw new Exception("Unable to load $model.");
-	}
 
 	# Set language
 	if (isset($_GET['lang'])
@@ -37,7 +21,24 @@
 		$lang = DEFAULT_LANGUAGE;
 	endif;
 
+	require_once 'lib/functions.inc.php';
+
 	includeLanguage($lang);
+
+	# Sessions
+	session_save_path();
+	session_start();
+
+	# PHPMailer
+	require_once 'lib/phpmailer.class.php';
+
+	# Models
+	function __autoload($model) {
+		if (file_exists(DEFAULT_MODEL_PATH . strtolower($model) . DEFAULT_MODEL_EXTENSION))
+			includeModel($model);
+		else
+			throw new Exception("Unable to load $model.");
+	}
 
 	# Set page
 	if (isset($_GET['page'])

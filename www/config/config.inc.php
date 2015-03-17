@@ -40,6 +40,7 @@
 	define('DEFAULT_CONTROLLER_EXTENSION', '.cont.php');
 	define('DEFAULT_VIEW_EXTENSION', '.view.php');
 	define('DEFAULT_SECTION_EXTENSION', '.sec.php');
+	define('DEFAULT_LANG_EXTENSION', '.lang.php');
 
 	# Languages
 	$authorized_languages = array(

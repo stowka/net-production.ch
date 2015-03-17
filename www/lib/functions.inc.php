@@ -50,7 +50,7 @@
 	}
 
 	# Display language
-	function displayLanguage() {
+	function displayLanguage($lang) {
 		echo $lang;
 	}
 
@@ -63,7 +63,7 @@
 	# Inclusion functions
 	function includeLanguage($lang) {
 		require_once DEFAULT_LANG_PATH . 
-			$lang . DEFAULT_INC_EXTENSION;
+			$lang . DEFAULT_LANG_EXTENSION;
 	}
 
 	function includeSection($section) {
