@@ -10,13 +10,13 @@
 	.row {
 		border-bottom: solid 1px transparent;
 		margin: -25px 0 -1px 25px;
-		width: 100%;
+		
 	}
 
-	.row:not(.no-collapse)>* {
+	/*.row:not(.no-collapse)>* {
 		width: 100% !important;
 		margin-left: 0 !important;
-	}
+	}*/
 
 	/* font */
 
@@ -76,9 +76,7 @@
 
 		.image img {
 				display: block;
-				width: 383px;
-				height: 269px
-				border-radius: 5px;
+				width: 100%;
 		}
 
 		a img {

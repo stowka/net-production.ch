@@ -128,7 +128,7 @@
 
 
 
-	/*header p {
+	header p {
 		color: #5E605F;
 		font-size: 1.25em;
 		position: relative;
@@ -141,7 +141,7 @@
 		text-align: center;
 		color: black;
 		font-weight: bold;
-	} */
+	} 
 
 	header {
 		margin: 0 0 3em 0;
@@ -332,12 +332,14 @@
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
+			width: 100%;
 		}
 
-			.image.featured img {
+		/*	.image.featured img {
 				display: block;
-				width: 100%;
-			}
+				width: 372px;
+				height: 215px;
+			}*/
 
 /* Icon */
 
@@ -616,13 +618,13 @@
 			font-size: 0.8em;
 		}
 
-		/*input[type="button"].big,
+		input[type="button"].big,
 		input[type="submit"].big,
 		input[type="reset"].big,
 		.button.big {
 			font-size: 1.5em;
 			letter-spacing: -0.025em;
-		}*/
+		}
 
 /* Box */
 
@@ -654,7 +656,7 @@
 			margin: 0;
 		}
 
-		/*.box.style2 .image {
+		.box.style2 .image {
 			position: relative;
 			left: 2em;
 			top: 2em;
@@ -683,7 +685,7 @@
 
 		.box {
 			padding: 2em;
-		} */
+		} 
 
 
 /* Header */

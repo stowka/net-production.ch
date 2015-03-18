@@ -88,10 +88,10 @@
 
 /* Grid */
 
-/*	.row {
+	.row {
 		border-bottom: solid 1px transparent;
 		margin: -25px 0 -1px 25px;
-	} */
+	} 
 
 	.row > * {
 		float: left;

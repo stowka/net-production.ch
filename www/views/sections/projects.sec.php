@@ -9,7 +9,7 @@
 				<div class="row">
 					<div class="4u">
 						<article class="box style2">
-							<a href="#" class="image featured"><img src="global/img/screenshots/deltapianotrio.png" alt="" /></a>
+							<a href="#" class="image featured"><img src="global/img/pictures/pic01.jpg" alt="" /></a>
 							<h3><a href="#">Magna feugiat</a></h3>
 							<p>Ornare nulla proin odio consequat.</p>
 						</article>
