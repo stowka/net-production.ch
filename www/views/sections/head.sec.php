@@ -22,6 +22,8 @@
 	<!-- JAVASCRIPT -->
 	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 	<script src="global/js/jquery.min.js"></script>
+	<script src="global/js/jquery.fancybox.js"></script>
+	<script src="global/js/jquery.fancybox.pack.js"></script>
 	<script src="global/js/jquery.dropotron.min.js"></script>
 	<script src="global/js/skel.min.js"></script>
 	<script src="global/js/skel-layers.min.js"></script>
