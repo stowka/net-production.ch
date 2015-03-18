@@ -9,12 +9,16 @@
 		private $id;
 		private $name;
 		private $biography;
+        private $position;
+        private $image;
 		private $language;
 
 		function __construct(){
 			$this->id = 0;
 			$this->name = "";
 			$this->biography = "";
+            $this->position = "";
+            $this->image = "";
 			$this->language = "";
 		}
 
@@ -29,15 +33,18 @@
 			$stmt->closeCursor();
 			$instance->setName($row['name']);
 			$instance->setBiography($row['biography']);
-			//$instance->setLanguage(Language::initWithId($row['language']));
+            $instance->setPosition($row['position']);
+            $instance->setImage($row['image']);
             $instance->setLanguage($row['language']);
 			return $instance;
 		}
 
-		public static function initWithData($name, $biography, $language) {
+		public static function initWithData($name, $biography, $position, $image, $language) {
 			$instance = new self();
 			$instance->setName($name);
 			$instance->setBiography($biography);
+            $instance->setPosition($position);
+            $instance->setImage($image);
 			$instance->setLanguage($language);
 			return $instance;
 		}
@@ -46,10 +53,12 @@
 			if (!empty($this->name) && !empty($this->biography) 
 				&& !empty($this->language)) {
 				$dbh = SPDO::getInstance();
-				$stmt = $dbh->prepare("INSERT INTO team(name, biography, language)
-					VALUES (:name, :biography, :language);");
+				$stmt = $dbh->prepare("INSERT INTO team(name, biography, position, image, language)
+					VALUES (:name, :biography, :position, :image, :language);");
 				$stmt->bindParam(":name", $this->name, PDO::PARAM_STR);
 				$stmt->bindParam(":biography", $this->biography, PDO::PARAM_STR);
+				$stmt->bindParam(":position", $this->language, PDO::PARAM_STR);
+				$stmt->bindParam(":image", $this->language, PDO::PARAM_STR);
 				$stmt->bindParam(":language", $this->language, PDO::PARAM_STR);
 				$stmt->execute();
 				$this->id = $dbh->lastInsertId();
@@ -103,6 +112,14 @@
 			return $this->biography;
 		}
 
+		public function getPosition() {
+			return $this->position;
+		}
+
+		public function getImage() {
+			return $this->image;
+		}
+
 		public function getLanguage() {
 			return $this->language;
 		}
@@ -121,6 +138,14 @@
 
 		public function setBiography($biography) {
 			$this->biography = $biography;
+		}
+
+        public function setPosition($position) {
+			$this->position = $position;
+        }
+
+		public function setImage($image) {
+			$this->image = $image;
 		}
 
 		public function setLanguage($language) {
