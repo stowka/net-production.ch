@@ -6,7 +6,7 @@
 	 */
 ?>
 <!-- Highlights -->
-<section class="wrapper style1">
+<section class="wrapper style1" id="commitments">
 	<div class="container">
 		<div class="row 400%">
 		<?php foreach ($commitments as $commitment) { ?>
