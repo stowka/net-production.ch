@@ -18,9 +18,9 @@
         
         <section class="6u 12u(narrower)">
             <div class="box post">
-                <!--TODO : Change image link -->
-                <a href="#" class="image left"><img
-                   src="global/img/pictures/pic01.jpg" alt="" /></a>
+                <a href="#" class="image left">
+                    <img src="global/img/portraits/<?php echo $member->getImage();?>" alt="<?php echo $member->getName();?>"/>
+                </a>
 				<div class="inner">
                 <h3><?= utf8_encode($member->getName())?></h3>
                     <p><?=utf8_encode($member->getBiography())?></p>
