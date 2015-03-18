@@ -22,8 +22,8 @@
                 <a href="#" class="image left"><img
                    src="global/img/pictures/pic01.jpg" alt="" /></a>
 				<div class="inner">
-                <h3><?= $member->getName()?></h3>
-                    <p><?=$member->getBiography()?></p>
+                <h3><?= utf8_encode($member->getName())?></h3>
+                    <p><?=utf8_encode($member->getBiography())?></p>
 				</div>
 			</div>
 		</section>
