@@ -8,5 +8,6 @@
 
     require_once "controllers/mail.cont.php";
     require_once "controllers/team.cont.php";
+    require_once "controllers/commitments.cont.php";
 
     require_once "views/home.view.php";
