@@ -1,4 +1,5 @@
 <?php
+
 	/**
 	 * Default back controller
 	 * @author Antoine De Gieter
@@ -6,6 +7,8 @@
 	 */
 
 	require_once 'config/config.inc.php';
+	require_once 'lib/functions.inc.php';
+    require_once 'lib/spdo.class.php';
 
 	# Set language
 	if (isset($_GET['lang'])
@@ -21,7 +24,6 @@
 		$lang = DEFAULT_LANGUAGE;
 	endif;
 
-	require_once 'lib/functions.inc.php';
 
 	includeLanguage($lang);
 
@@ -35,7 +37,7 @@
 	# Models
 	function __autoload($model) {
 		if (file_exists(DEFAULT_MODEL_PATH . strtolower($model) . DEFAULT_MODEL_EXTENSION))
-			includeModel($model);
+            require_once('models/'. strtolower($model) . '.class.php');
 		else
 			throw new Exception("Unable to load $model.");
 	}
@@ -43,7 +45,7 @@
 	# Set page
 	if (isset($_GET['page'])
 	&& in_array($_GET['page'], $authorized_pages)):
-		includeController($_GET['page']);
+		require_once('controllers/'. $_GET['page'] . '.cont.php');
 	else:
-		includeController('home');
+		require_once('controllers/home.cont.php');
 	endif;

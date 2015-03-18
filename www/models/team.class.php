@@ -22,14 +22,15 @@
 			$instance = new self();
 			$instance->setId($id);
 			$dbh = SPDO::getInstance();
-			$stmt = $dbh->prepare("SELECT * FROM team WHERE id == :id;");
+			$stmt = $dbh->prepare("SELECT * FROM team WHERE id = :id;");
 			$stmt->bindParam(":id", $id, PDO::PARAM_INT);
 			$stmt->execute();
 			$row = $stmt->fetch(PDO::FETCH_ASSOC);
 			$stmt->closeCursor();
 			$instance->setName($row['name']);
 			$instance->setBiography($row['biography']);
-			$instance->setLanguage(Language::initWithId($row['language']));
+			//$instance->setLanguage(Language::initWithId($row['language']));
+            $instance->setLanguage($row['language']);
 			return $instance;
 		}
 
@@ -66,13 +67,14 @@
 			$stmt->closeCursor();
 		}
 
-		public static function getAll() {
+		public static function getAll($lang = "fr_CH") {
 			$dbh = SPDO::getInstance();
-			$stmt = $dbh->prepare("SELECT id FROM team;");
+			$stmt = $dbh->prepare("SELECT id FROM team WHERE language = :lang;");
+            $stmt->bindParam(":lang", $lang, PDO::PARAM_STR);
 			$stmt->execute();
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$stmt->closeCursor();
-			$teams = array();
+			$teams = Array();
 			foreach ($rows as $row)
 				$teams[] = Team::initWithId($row['id']);
 			return $teams;
@@ -89,19 +91,19 @@
 		 * Getters
 		 */
 
-		function getId() {
+	    public function getId() {
 			return $this->id;
 		}
 
-		function getName() {
+		public function getName() {
 			return $this->name;
 		}
 
-		function getBiography() {
+		public function getBiography() {
 			return $this->biography;
 		}
 
-		function getLanguage() {
+		public function getLanguage() {
 			return $this->language;
 		}
 
@@ -109,19 +111,19 @@
 		 * Setters
 		 */
 
-		function setId($id) {
+		public function setId($id) {
 			$this->id = $id;
 		}
 
-		function setName($name) {
+		public function setName($name) {
 			$this->name = $name;
 		}
 
-		function setBiography($biography) {
+		public function setBiography($biography) {
 			$this->biography = $biography;
 		}
 
-		function setLanguage($language) {
+		public function setLanguage($language) {
 			$this->language = $language;
 		}
 	}
