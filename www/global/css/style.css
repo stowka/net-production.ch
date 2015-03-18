@@ -317,6 +317,7 @@
 			.image.left img {
 				display: block;
 				width: 100%;
+				height: 100%;
 			}
 
 		.image.fit {
