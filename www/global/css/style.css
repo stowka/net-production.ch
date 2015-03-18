@@ -7,10 +7,10 @@
 	License: pixelarity.com/license
 */
 
-	@font-face{ 
+/*	@font-face{ 
 		font-family: 'Lato';
 		src: url(../fonts/Lato.ttf) format('truetype');
-	}
+	} */
 
 /* Basic */
 
@@ -141,7 +141,7 @@
 		text-align: center;
 		color: black;
 		font-weight: bold;
-	}
+	} 
 
 	header {
 		margin: 0 0 3em 0;
@@ -170,14 +170,14 @@
 		margin: 0 0 3em 0;
 	}
 
-		footer p {
+	/*	footer p {
 			color: #5E605F;
 			font-size: 1.25em;
 			position: relative;
 			margin-top: 1.75em;
 			margin-bottom: 2.25em;
 			text-align: center;
-		}
+		} */
 
 		
 
@@ -226,7 +226,7 @@
 		border-radius: 4px;
 	}
 
-	#name {
+/*	#name {
 		width: 582px;
 	}
 
@@ -241,7 +241,7 @@
 
 	#message {
 		height: 200px;
-	}
+	} */
 
 
 		input[type="text"]:focus,
@@ -296,7 +296,7 @@
 		border-radius: 5px;
 	}
 
-		.image img {
+	/*	.image img {
 			display: block;
 			width: 383px;
 			height: 269px
@@ -304,7 +304,7 @@
 
 		a img {
 			border: 0;
-		}
+		} */
 
 		.image.left {
 			display: block;
@@ -332,12 +332,14 @@
 		.image.featured {
 			display: block;
 			margin: 0 0 2em 0;
+			width: 100%;
 		}
 
-			.image.featured img {
+		/*	.image.featured img {
 				display: block;
-				width: 100%;
-			}
+				width: 372px;
+				height: 215px;
+			}*/
 
 /* Icon */
 
@@ -683,7 +685,7 @@
 
 		.box {
 			padding: 2em;
-		}
+		} 
 
 
 /* Header */

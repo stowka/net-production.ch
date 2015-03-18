@@ -8,22 +8,22 @@
 
 <!doctype html>
 <html lang="<?php displayLanguage('fr_CH'); ?>">
-	<?php require_once('views/sections/head.sec.php') ?>
+	<?php includeSection('head') ?>
 
 	<body>
-		<?php require_once('views/sections/menu.sec.php'); ?>
-		<?php require_once('views/sections/banner.sec.php'); ?>
+		<?php includeSection('menu'); ?>
+		<?php includeSection('banner'); ?>
 
-		<?php require_once('views/sections/commitments.sec.php'); ?>
+		<?php includeSection('commitments'); ?>
 
-		<?php require_once('views/sections/giant.sec.php'); ?>
+		<?php includeSection('giant'); ?>
 
-		<?php require_once('views/sections/projects.sec.php'); ?>
+		<?php includeSection('projects'); ?>
 
-		<?php require_once('views/sections/posts.sec.php'); ?>
+		<?php includeSection('post'); ?>
 
-		<?php require_once('views/sections/team.sec.php'); ?>
+		<?php includeSection('team'); ?>
 
-		<?php require_once('views/sections/contact.sec.php'); ?>
+		<?php includeSection('contact'); ?>
 	</body>
 </html>

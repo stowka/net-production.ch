@@ -7,7 +7,7 @@
 			</header>
 			<div class="container">
 				<div class="row">
-
+				
 				<?php foreach ($types as $type) { ?>
 				<div class="4u">
 					<article class="box style2">

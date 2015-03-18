@@ -11,7 +11,7 @@
 	<!-- Logo -->
 	<h1>
 		<a href="./" id="logo">
-			Net Production K&ouml;be & Co
+			Net Production
 		</a>
 	</h1>
 

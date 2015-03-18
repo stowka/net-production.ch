@@ -59,10 +59,10 @@
 	
 	/* Menu */
 
-	.menu {
+	/*.menu {
 		margin: 15px 15px;
 		font-weight: bold;
-	}
+	}*/
 
 	.menu-icon {
 		filter: grayscale(1);
@@ -91,7 +91,7 @@
 	.row {
 		border-bottom: solid 1px transparent;
 		margin: -25px 0 -1px 25px;
-	}
+	} 
 
 	.row > * {
 		float: left;
