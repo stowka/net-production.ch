@@ -24,7 +24,6 @@
 		$lang = DEFAULT_LANGUAGE;
 	endif;
 
-
 	includeLanguage($lang);
 
 	# Sessions
