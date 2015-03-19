@@ -8,33 +8,27 @@
 			<div class="container">
 				<div class="row">
 				
-				<?php foreach ($types as $type) { ?>
-				<div class="4u">
-					<article class="box style2">
-						<a href="#fancybox<?php echo $type->getId();?>" class=" image fancybox" title="<?php echo $type->getLabel()?>"><img src="global/img/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getImage(); ?>"/></a>
-						<h3><a href="#"><?php echo $type->getLabel()?></a></h3>
-					</article>
-				</div>
-				<?php } ?>
+				<?php foreach ($types as $type): ?>
+					<div class="4u">
+						<article class="box style2">
+							<a href="#" class=" image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></a>
+							<h3><a href="#"><?php echo $type->getLabel()?></a></h3>
+						</article>
+					</div>
+				<?php endforeach; ?>
+				
+				<?php foreach ($projects as $projectType): ?>
+					<div class="type-details">
+						<?php foreach ($projectType as $project): ?>
+							<div class="project-details" style="background-image:url(global/img/projects/<?php echo $project->getPicture();?>);">
+								<h3><?php echo $project->getTitle(); ?></h3>
+								<p>
+								</p>
+							</div>
+						<?php endforeach; ?>
+					</div>
+				<?php endforeach; ?>
 				</div>
 			</div>
-			<!-- <footer>
-				<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
-				<center><a href="#contact" class="button big scrolly">Ata ut neque nisi et</a></center>
-			</footer> -->
-			
-			<!-- Fancybox pour chaque catégorie -->
-			<?php foreach ($types as $type) { ?>
-				<div id="fancybox<?php echo $type->getId(); ?>" style="display:none">
-					
-				</div>
-			<?php } ?>
 		</article>
 	</div>
-
-	<script type="text/javascript">
-		$(".fancybox").fancybox({	
-			'titleShow' : true,
-			'titlePosition': 'inside'
-		});
-	</script>

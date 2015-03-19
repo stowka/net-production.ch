@@ -10,6 +10,8 @@
         private $title;
         private $description;
         private $public;
+        private $picture;
+        private $url;
         private $type;
         private $language;
 
@@ -18,6 +20,8 @@
             $this->title = "";
             $this->description = "";
             $this->public = False;
+            $this->picture = "";
+            $this->url = "";
             $this->type = 0;
             $this->language = "";
         }
@@ -34,18 +38,22 @@
             $instance->setTitle($row['title']);
             $instance->setDescription($row['description']);
             $instance->setPublic($row['public']);
+            $instance->setPicture($row['picture']);
+            $instance->setUrl($row['url']);
             $instance->setType($row['type']);
             $instance->setLanguage($row['language']);
             return $instance;
         }
 
-        public static function initWithData($title, $description, $public,
+        public static function initWithData($title, $description, $public, $picture, $url,
             $type, $language) {
 
             $instance = new self();
             $instance->setTitle($title);
             $instance->setDescription($description);
             $instance->setPublic($public);
+            $instance->setPicture($picture);
+            $instance->setUrl($url);
             $instance->setType($type);
             $instance->setLanguage($language);
             return $instance;
@@ -56,11 +64,13 @@
                 !empty($this->language)) {
                 $dbh = SPDO::getInstance();
                 $stmt = $dbh->prepare("INSERT INTO project(title, description,
-                    public, type, language) VALUES(:title, :description,
-                    :public, :type, :language);");
+                    public, picture, url, type, language) VALUES(:title, :description,
+                    :public, :picture, :url, :type, :language);");
                 $stmt->bindParam(":title", $this->title, PDO::PARAM_STR);
                 $stmt->bindParam(":description", $this->description, PDO::PARAM_STR);
                 $stmt->bindParam(":public", $this->public, PDO::PARAM_BOOL);
+                $stmt->bindParam(":picture", $this->picture, PDO::PARAM_STR);
+                $stmt->bindParam(":url", $this->url, PDO::PARAM_STR);
                 $stmt->bindParam(":type", $this->type, PDO::PARAM_INT);
                 $stmt->bindParam(":language", $this->language, PDO::PARAM_STR);
                 $stmt->execute();
@@ -105,6 +115,17 @@
             return $projects;
         }
 
+        public static function getAllSortedByType($lang = "fr_CH") {
+            $types = Type::getAll($lang);
+            $projects = Array();
+
+            $dbh = SPDO::getInstance();
+            foreach ($types as $type) {
+                $projects[$type->getKeyword()] = Project::getAllByTypeAndLanguage($type->getId(), $lang);
+            }
+            return $projects;
+        }
+
         public static function deleteAll() {
             $dbh = SPDO::getInstance();
             $stmt = $dbh->prepare("DELETE FROM project;");
@@ -141,6 +162,14 @@
             return $this->language;
         }
 
+        public function getPicture() {
+            return $this->picture;
+        }
+
+        public function getUrl() {
+            return $this->url;
+        }
+
         /*
          * Setters
          */
@@ -167,6 +196,14 @@
 
         public function setLanguage($language) {
             $this->language = $language;
+        }
+
+        public function setPicture($picture) {
+            $this->picture = $picture;
+        }
+
+        public function setUrl($url) {
+            $this->url = $url;
         }
 
     }

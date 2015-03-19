@@ -5,3 +5,5 @@
      */
 
     $types = Type::getAll($lang);
+    $projects = Project::getAllSortedByType($lang);
+    
