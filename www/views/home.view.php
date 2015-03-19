@@ -16,7 +16,7 @@
 
 		<?php require_once('views/sections/commitments.sec.php'); ?>
 
-		<?php require_once('views/sections/giant.sec.php'); ?>
+		<?php require_once('views/sections/quote.sec.php'); ?>
 
 		<?php require_once('views/sections/projects.sec.php'); ?>
 

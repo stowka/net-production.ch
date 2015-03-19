@@ -143,10 +143,6 @@
 		font-weight: bold;
 	} 
 
-	header {
-		margin: 0 0 3em 0;
-	}
-
 	header.major {
 		text-align: center;
 		margin: 0 0 2em 0;
@@ -628,8 +624,8 @@
 
 /* Box */
 
-	.box.highlight {
-		text-align: center;
+	.box.highlight li {
+		text-align: justify;
 	}
 
 	.box.post {
@@ -690,8 +686,8 @@
 
 /* Header */
 
-	#header {
-		text-align: center;
+/*	#header {
+		text-align: left;
 		padding: 3em 0 0 0;
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
@@ -701,15 +697,13 @@
 	}
 
 		#header h1 {
-			padding: 0 0 2.75em 0;
-			margin: 0;
 		}
 
 			#header h1 a {
 				font-size: 1.5em;
 				letter-spacing: -0.025em;
 				border: 0;
-			}
+			} */
 
 	#nav {
 		background-color: #282828;
@@ -841,13 +835,15 @@
 
 /* Wrapper */
 
-	.wrapper {
-		padding: 5em 0 3em 0;
+/*	.wrapper {
+		padding: 8em 0 8em 0;
+		text-align: center;
 	}
 
 		.wrapper.style1 {
-			background: #fff;
-		}
+			background-color: #fff;
+			background-image: none; 
+		}*/
 
 		.wrapper.style2 {
 			background-color: #fff;
@@ -911,7 +907,8 @@
 				border-bottom-color: transparent;
 			}
 
-		#footer .container {
+		#footer .
+		 {
 			margin-bottom: 4em;
 		}
 

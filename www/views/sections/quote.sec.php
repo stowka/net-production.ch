@@ -6,11 +6,12 @@
 	 */
 ?>
 <!-- Gigantic Heading -->
-<section class="wrapper style2" id="commitments">
+<section class="wrapper style2">
 	<div class="container">
 		<header class="major">
-			<h2>Vel accumsan natoque ata non mus sem volutpat</h2>
-			<p>Eget sem quis natoque faucibus aliquam vis ante massa in</p>
+			<h2>"The internet is becoming the town square 
+				<br>for the global village of tomorrow"</h2>
+			<p>Bill Gates</p>
 		</header>
 	</div>
 </section>

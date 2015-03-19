@@ -5,21 +5,12 @@
 	 * @copyright Net Production Köbe & Co
 	 */
 ?>
-<!-- Header -->
-<div id="header">
-
-	<!-- Logo -->
-	<h1>
-		<a href="./" id="logo">
-			Net Production
-		</a>
-	</h1>
-
 	<!-- Nav -->
+	<span id="home"> </span>
 	<nav id="nav">
 		<ul class="container">
 			<li>
-				<a class="menu menu-icon" href="#header">
+				<a class="menu menu-icon" href="#home">
 					<img src="global/img/icons/home.png" width="20px">&nbsp;&nbsp;Home
 				</a>
 			</li>
@@ -45,4 +36,22 @@
 			</li>
 		</ul>
 	</nav>
-</div>
+
+	<!-- header -->
+
+	<div class="wrapper style1 first">
+		<article class="container" id="top">
+			<div class="row">
+				<div class="4u">
+					<span class="image fit"><img src="global/img/logos/logo.png" alt="" /></span>
+				</div>
+				<div class="8u">
+					<header>
+						<h1 style="font-size:50px;">Net production</h1>
+					</header>
+						<p>Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
+						
+				</div>
+			</div>
+		</article>
+	</div>
