@@ -11,7 +11,7 @@
 				<?php foreach ($types as $type) { ?>
 				<div class="4u">
 					<article class="box style2">
-						<a href="#fancybox<?php echo $type->getId();?>" class="image featured fancybox"><img src="global/img/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getImage(); ?>"/></a>
+						<a href="#fancybox<?php echo $type->getId();?>" class="fancybox"><img src="global/img/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getImage(); ?>"/></a>
 						<h3><a href="#"><?php echo $type->getLabel()?></a></h3>
 					</article>
 				</div>
@@ -26,7 +26,6 @@
 			<!-- Fancybox pour chaque catégorie -->
 			<?php foreach ($types as $type) { ?>
 				<div id="fancybox<?php echo $type->getId(); ?>" style="display:none">
-					Coucou <br>
 					<?php echo $type->getLabel();?>
 				</div>
 			<?php } ?>
