@@ -19,6 +19,10 @@
 		<link rel="stylesheet" href="global/css/custom.css" />
 		<link rel="stylesheet" href="global/css/mobile.css" />
 
+	<!-- FANCYBOX -->
+		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		
