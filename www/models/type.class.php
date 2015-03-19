@@ -16,7 +16,7 @@
 			$this->id = 0;
 			$this->keyword = "";
 			$this->label = "";
-			
+			$this->image = "";
 			$this->language = "";
 		}
 
@@ -31,7 +31,7 @@
 			$stmt->closeCursor();
 			$instance->setKeyword($row['keyword']);
 			$instance->setLabel($row['label']);
-			
+			$instance->setImage($row['image']);
 			$instance->setLanguage($row['language']);
 			return $instance;
 		}
@@ -40,7 +40,7 @@
 			$instance = new self();
 			$instance->setKeyword($keyword);
 			$instance->setLabel($label);
-			
+			$instance->setImage($image);
 			$instance->setLanguage($language);
 			return $instance;
 		}
@@ -50,10 +50,10 @@
 				$dbh = SPDO::getInstance();
 				$stmt = $dbh->prepare("INSERT INTO type 
 										VALUES (null, :keyword, :label, :image, :language);");
-				$stmt->bindParam(":keyword", $this->label, PDO::PARAM_STR);
+				$stmt->bindParam(":keyword", $this->keyword, PDO::PARAM_STR);
 				$stmt->bindParam(":label", $this->label, PDO::PARAM_STR);
-				
-				$stmt->bindParam(":language", $this->label, PDO::PARAM_STR);
+				$stmt->bindParam(":image", $this->image, PDO::PARAM_STR);
+				$stmt->bindParam(":language", $this->language, PDO::PARAM_STR);
 				$stmt->execute();
 				$this->id = $dbh->lastInsertId();
 				$stmt->closeCursor();
