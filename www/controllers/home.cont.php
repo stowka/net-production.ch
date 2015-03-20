@@ -11,5 +11,6 @@
     require_once "controllers/commitments.cont.php";
     require_once "controllers/projects.cont.php";
     require_once "controllers/vocabulary.cont.php";
+    require_once "controllers/partner.cont.php";
 
     require_once "views/home.view.php";

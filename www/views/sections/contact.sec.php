@@ -9,7 +9,7 @@
 <div id="footer">
 	<div class="container" id="contacts">
 		<div class="row">
-			<section class="3u 6u(narrower) 12u$(mobilep)">
+			<!--<section class="3u 6u(narrower) 12u$(mobilep)">
 				<h3>Augue mi Morbi</h3>
 				<ul class="links">
 					<li><a href="#">Mattis et quis rutrum</a></li>
@@ -20,7 +20,7 @@
 					<li><a href="#">Suspendisse varius nibh</a></li>
 					<li><a href="#">Sed et dapibus mattis</a></li>
 				</ul>
-			</section>
+			</section> 
 			<section class="3u 6u$(narrower) 12u$(mobilep)">
 				<h3>Diam Vitae ut Felis</h3>
 				<ul class="links">
@@ -32,15 +32,22 @@
 					<li><a href="#">Sed et dapibus quis</a></li>
 					<li><a href="#">Rutrum amet varius</a></li>
 				</ul>
-			</section>
-
+			</section> -->
 			<?php
-
 				$value = Array();
 				foreach ($words as $word) {
 					$value[$word->getKeyword()] = $word->getValue();
 				}
 			?>
+			<section class="5u 7u(narrower) 12u$(mobilep)">
+				<h3><?php echo $value['partner']?></h3>
+				<ul class="links">
+					<?php foreach ($partners as $partner): ?>
+						<li><a href="<?php echo $partner->getUrl();?>"><?php echo $partner->getName();?></a></li>
+					<?php endforeach; ?>
+				</ul>
+			</section>
+
 			<section class="6u 12u(narrower)">
 				<h3><?php echo $value['contact'];?></h3>
 				<form method="post" action="./">
