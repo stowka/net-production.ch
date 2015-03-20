@@ -35,4 +35,5 @@
 	<script src="global/js/skel.min.js"></script>
 	<script src="global/js/skel-layers.min.js"></script>
 	<script src="global/js/init.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 </head>

@@ -25,8 +25,10 @@
 					<tbody>
 						<tr>
 							<td class="text-left">
-								<?php $text = str_replace("\n","</ul></li>",str_replace("-", "<li><ul>", $commitment->getDescription())); ?>
-								<p><?php echo utf8_encode($text); ?></p>
+								<ul>
+									<?php $text = str_replace("\n","</li>",str_replace("-", "<li>", $commitment->getDescription())); ?>
+									<p><?php echo utf8_encode($text); ?></p>
+								</ul>
 							</td>
 						</tr>
 					<!-- <div class="box highlight"> </div> -->

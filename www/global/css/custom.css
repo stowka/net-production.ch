@@ -57,6 +57,7 @@
 
 	header h1 {
 		margin: 0 0 10px 0;
+		font-size: 60px;
 	}
 
 	header h2 {
@@ -135,7 +136,52 @@
 		.image.fit img {
 			max-width: 100% !important;
 			height: auto !important;
+			margin-top: -80px;
 		}
+
+		/* team */
+
+		.image.left {
+			display: block;
+			float: left;
+			margin: 0 2em 2em 0;
+			position: relative;
+			top: 0.25em;
+			overflow: hidden;
+			border-radius: 100px;
+			box-shadow: 5px 5px 0px #aaa;
+		}
+
+			.image.left img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+
+		.image.right {
+			display: block;
+			float: right;
+			margin: 0 2em 2em 0;
+			position: relative;
+			top: 0.25em;
+			overflow: hidden;
+			border-radius: 100px;
+			box-shadow: 5px 5px 0px #aaa;
+		}
+
+			.image.right img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+
+		.box.post .inner {
+			margin-left: calc(15% + 2em);
+			margin-right: calc(15% + 2em);
+			text-align: justify;
+		}
+
+
 
 	/* button */
 
@@ -203,6 +249,7 @@
 		}
 		.wrapper.style1.first {
 			background-image: url('../img/backgrounds/white.jpg');
+			padding-top: 7em;
 		}
 
 		.wrapper.first {
@@ -262,3 +309,120 @@
 			font-size: 15px;
 		}
 
+		/* div projects */
+
+		.type-details {
+			visibility: hidden;
+		}
+
+		.type-details.active {
+			visibility: visible;
+			height: 200px;
+			width: 100%;
+			background-color: #fff;
+		}
+
+
+
+		/* tada */
+
+		/*base code*/
+	.animated {
+	  -webkit-animation-duration: 1s;
+	  animation-duration: 1s;
+	  -webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	}
+	.animated.infinite {
+	  -webkit-animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+	}
+	.animated.hinge {
+	  -webkit-animation-duration: 2s;
+	  animation-duration: 2s;
+	}
+	/*the animation definition*/
+	@-webkit-keyframes tada {
+	  0% {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1)
+	  }
+	  10%,
+	  20% {
+	    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+	  }
+	  30%,
+	  50%,
+	  70%,
+	  90% {
+	    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	  }
+	  40%,
+	  60%,
+	  80% {
+	    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	  }
+	  100% {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1)
+	  }
+	}
+	@keyframes tada {
+	  0% {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    -ms-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1)
+	  }
+	  10%,
+	  20% {
+	    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+	    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+	  }
+	  30%,
+	  50%,
+	  70%,
+	  90% {
+	    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+	    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+	  }
+	  40%,
+	  60%,
+	  80% {
+	    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+	    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+	  }
+	  100% {
+	    -webkit-transform: scale3d(1, 1, 1);
+	    -ms-transform: scale3d(1, 1, 1);
+	    transform: scale3d(1, 1, 1)
+	  }
+	}
+	.tada {
+	  -webkit-animation-name: tada;
+	  animation-name: tada
+	}
+
+	.test {
+		text-decoration: none;
+	}
+	.test:hover {
+		background: none;
+	}
+	.test span {
+		display: none;
+	}
+	.test:hover span {
+		display: inline;
+		position: absolute;
+		margin-top:125px;
+		left: 30px;
+		width: 200px;
+		text-align: center;
+		color: black;
+	}

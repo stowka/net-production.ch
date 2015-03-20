@@ -47,9 +47,9 @@
 				</div>
 				<div class="8u">
 					<header>
-						<h1 style="font-size:50px;">Net production</h1>
+						<h1>Net Production</h1>
 					</header>
-						<p>Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
+						<p style="font-size:1.40em;">Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
 						
 				</div>
 			</div>
