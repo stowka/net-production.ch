@@ -90,7 +90,7 @@
 
         public static function getAllByTypeAndLanguage($typeId, $language) {
             $dbh = SPDO::getInstance();
-            $stmt = $dbh->prepare("SELECT id FROM project WHERE type = :type and language = :language;");
+            $stmt = $dbh->prepare("SELECT id FROM project WHERE type = :type and language = :language and public = 1;");
             $stmt->bindParam(":type", $typeId , PDO::PARAM_INT);
             $stmt->bindParam(":language", $language, PDO::PARAM_STR);
             $stmt->execute();
