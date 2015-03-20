@@ -15,13 +15,13 @@
 				</a>
 			</li>
 			<li>
-				<a class="menu menu-icon" href="#projects">
-					<img src="global/img/icons/projects.png" width="20px">&nbsp;&nbsp;Projects
+				<a class="menu menu-icon" href="#commitments">
+					<img src="global/img/icons/commitments.png" width="20px">&nbsp;&nbsp;Commitments
 				</a>
 			</li>
 			<li>
-				<a class="menu menu-icon" href="#commitments">
-					<img src="global/img/icons/commitments.png" width="20px">&nbsp;&nbsp;Commitments
+				<a class="menu menu-icon" href="#projects">
+					<img src="global/img/icons/projects.png" width="20px">&nbsp;&nbsp;Projects
 				</a>
 			</li>
 			<li>

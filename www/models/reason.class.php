@@ -20,7 +20,7 @@
 			$instance = new self();
 			$instance->setId($id);
 			$dbh = SPDO::getInstance();
-			$stmt = $dbh->prepare("SELECT * FROM reason WHERE id == :id;");
+			$stmt = $dbh->prepare("SELECT * FROM reason WHERE id = :id;");
 			$stmt->bindParam(":id", $id, PDO::PARAM_INT);
 			$stmt->execute();
 			$row = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -60,9 +60,10 @@
 			$stmt->closeCursor();
 		}
 
-		public static function getAll() {
+		public static function getAll($lang = "fr_CH") {
 			$dbh = SPDO::getInstance();
-			$stmt = $dbh->prepare("SELECT id FROM reason;");
+			$stmt = $dbh->prepare("SELECT id FROM reason WHERE language = :lang;");
+            $stmt->bindParam(":lang", $lang, PDO::PARAM_STR);
 			$stmt->execute();
 			$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 			$stmt->closeCursor();

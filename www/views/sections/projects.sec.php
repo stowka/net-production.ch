@@ -22,8 +22,6 @@
 						<?php foreach ($projectType as $project): ?>
 							<div class="project-details" style="background-image:url(global/img/projects/<?php echo $project->getPicture();?>);">
 								<h3><?php echo $project->getTitle(); ?></h3>
-								<p>
-								</p>
 							</div>
 						<?php endforeach; ?>
 					</div>
