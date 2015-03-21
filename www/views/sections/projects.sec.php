@@ -5,54 +5,53 @@
 				<h2>Posuere quis curae vis odio aliquet.</h2>
 				<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
 			</header>
-			<div class="container">
+			
+
+
+
+
+
+
+
+
+
+			<div class="main container">
+				<ul id="og-grid" class="og-grid">
+					<?php foreach ($types as $type): ?>
+					<li class="4u">
+						<a href="http://cargocollective.com/jaimemartinez/" data-projects="projet1!www.net-production.ch!deltapianotrio.png-/-projet2!www.net-production.ch!pharmaciegeny.png" data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" data-title="<?php echo $type->getLabel() ?>" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
+								<article class="box style2">
+									<span class="image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></span>
+									<h3><?php echo $type->getLabel()?></h3>
+								</article>
+						</a>
+					</li>
+					<?php endforeach; ?>
+				</ul>
+			</div>
+
+			<!--<div class="container">
 				<div class="row">
 				
 				<?php foreach ($types as $type): ?>
 					<div class="4u">
 						<article class="box style2">
-							<a href="#<?php echo $type->getKeyword();?>" class="clickme" id="<?php echo $type->getKeyword(); ?>"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></a>
+							<a href="#" class=" image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></a>
 							<h3><a href="#"><?php echo $type->getLabel()?></a></h3>
 						</article>
 					</div>
 				<?php endforeach; ?>
 				
 				<?php foreach ($projects as $projectType): ?>
-				<?php echo array_search($projectType, $projects);?>
-					<div class="type-details <?php echo array_search($projectType, $projects);?>">
-							<?php foreach ($projectType as $project): ?>
+					<div class="type-details">
+						<?php foreach ($projectType as $project): ?>
 							<div class="project-details" style="background-image:url(global/img/projects/<?php echo $project->getPicture();?>);">
 								<h3><?php echo $project->getTitle(); ?></h3>
-								<p></p>
 							</div>
-
-			            <?php endforeach; ?>
+						<?php endforeach; ?>
 					</div>
 				<?php endforeach; ?>
 				</div>
-			</div>
+			</div>-->
 		</article>
 	</div>
-
-<script type='text/javascript'>
-	  jQuery(document).ready(function(){
-
-	   //jQuery('.type-details').hide();
-
-	   $(document).find(".clickme").on('click',function(){
-
-	   	var test = $(this).attr("id");
-
-	    console.log( $(this).attr("id"));
-
-	   	 $(".type-details").removeClass("active");
-	   	$("."+test).addClass("active");
-
-	   	 //$("#cms").show();
-	     jQuery('.type-details.active').slideToggle(400);
-	    
-	     return false;
-	   });
-	});
-	
-</script>
