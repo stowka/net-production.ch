@@ -540,6 +540,54 @@
 
 		position: relative;
 	}
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button-plus {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-o-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		/*background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");*/
+		/*border-radius: 8px;*/
+		border: 3px solid  #f47661;
+		outline: 0;
+		color:  #f47661 !important;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0 1em;
+		line-height: 2.25em;
+		min-width: 7em;
+		text-align: center;
+		text-decoration: none;
+		font-weight: 700;
+		letter-spacing: -0.025em;
+		text-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 2px 1px 0px rgba(255,255,255,0.75);
+		overflow: hidden;
+		/*box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.5), inset 0px 2px 1px 0px rgba(255,255,255,0.75);*/
+		font-size: 0.75em;
+		vertical-align: top;
+		position: relative;
+		margin: 10px 40px;
+		background: none;
+	}
+	.pull-right {
+		float: right;
+	}
+	.button-plus:hover {
+			background-color: #f47661;
+			color: white !important;
+		}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -897,7 +945,7 @@
 /* Footer */
 
 	#footer {
-		padding: 4em 0 8em 0;
+		padding: 4em 0 1.5em 0;
 	}
 
 		#footer a {

@@ -6,6 +6,6 @@
 	 */
 ?>
 <!-- Banner -->
-<section id="banner">
+<!-- <section id="banner">
 	
-</section>
+</section>-->

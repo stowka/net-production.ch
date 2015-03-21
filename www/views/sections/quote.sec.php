@@ -6,10 +6,10 @@
 	 */
 ?>
 <!-- Gigantic Heading -->
-<section class="wrapper style2">
+<section class="wrapper style2 ">
 	<div class="container">
 		<header class="major">
-			<h2>"The internet is becoming the town square 
+			<h2 style="color:#bbb; font-weight: 400">"The internet is becoming the town square 
 				<br>for the global village of tomorrow"</h2>
 			<p>Bill Gates</p>
 		</header>

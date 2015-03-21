@@ -23,5 +23,6 @@
 		<?php require_once('views/sections/team.sec.php'); ?>
 
 		<?php require_once('views/sections/contact.sec.php'); ?>
+		<?php require_once('views/sections/footer.sec.php'); ?>
 	</body>
 </html>

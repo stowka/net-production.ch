@@ -49,7 +49,7 @@
 					<header>
 						<h1>Net Production</h1>
 					</header>
-						<p style="font-size:1.40em;">Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
+						<p style="font-size:1.40em;">Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme <a href="#commitments" class="button-plus">En savoir plus</a></p>
 						
 				</div>
 			</div>

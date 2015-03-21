@@ -52,8 +52,8 @@
 				<h3><?php echo $value['contact'];?></h3>
 				<form method="post" action="./">
 					<div class="row 50%">
-						<div class="6u 12u(mobilep)">
-							<input type="text" name="name" class="form-control" id="name" placeholder="* <?php echo $value['contact-name'];?>" />
+						<div class="12u">
+							<input type="text" name="name" class="form-control" id="name" style="width: 100%" placeholder="* <?php echo $value['contact-name'];?>" />
 						</div>
 					</div>
 					<div class="row 50%">
@@ -66,8 +66,8 @@
 						</div>
 					</div>
 					<div class="row 50%">
-						<div class="6u 12u(mobilep)">
-							<select name="reason" class="form-control" id="reason">
+						<div class="12u">
+							<select name="reason" class="form-control" id="reason" style="width: 100%">
 								<?php foreach ($reasons as $reason): ?>
 									<option value="<?php echo $reason->getLabel();?>"><?php echo $reason->getLabel();?></option>
 								<?php endforeach; ?>
@@ -82,8 +82,8 @@
 					</div>
 					<div class="row 50%">
 						<div class="12u">
-							<ul class="actions">
-								<li><button type="submit" class="button alt"><?php echo $value['contact-send'];?></button></li>
+							<ul class="actions" style="text-align: right">
+								<li><button type="submit" class="button-plus"><?php echo $value['contact-send'];?></button></li>
 							</ul>
 						</div>
 					</div>
