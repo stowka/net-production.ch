@@ -13,3 +13,9 @@ $(document).ready(function(){
 });
 
 </script>
+<script type="text/javascript" src="global/js/collapse.js"></script>
+<script>
+	$(function() {
+		Grid.init();
+	});
+</script>

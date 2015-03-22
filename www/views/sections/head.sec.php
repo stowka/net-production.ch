@@ -18,6 +18,7 @@
 		<link rel="stylesheet" href="global/css/style-wide.css" />
 		<link rel="stylesheet" href="global/css/custom.css" />
 		<link rel="stylesheet" href="global/css/mobile.css" />
+		<link rel="stylesheet" href="global/css/collapse.css" />
 
 	<!-- FANCYBOX -->
 		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
@@ -35,5 +36,5 @@
 	<script src="global/js/skel.min.js"></script>
 	<script src="global/js/skel-layers.min.js"></script>
 	<script src="global/js/init.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="global/js/modernizr.custom.js"></script>
 </head>
