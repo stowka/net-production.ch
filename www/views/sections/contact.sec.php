@@ -49,7 +49,7 @@
 			</section>
 
 			<section class="6u 12u(narrower)">
-				<h3><?php echo $value['contact'];?></h3>
+				<h3 style="color: #ddd"><?php echo $value['contact'];?></h3>
 				<form method="post" action="./">
 					<div class="row 50%">
 						<div class="12u">

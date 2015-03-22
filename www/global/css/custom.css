@@ -149,7 +149,6 @@
 			top: 0.25em;
 			overflow: hidden;
 			border-radius: 100px;
-			box-shadow: 5px 5px 0px #aaa;
 		}
 
 			.image.left img {
@@ -166,7 +165,6 @@
 			top: 0.25em;
 			overflow: hidden;
 			border-radius: 100px;
-			box-shadow: 5px 5px 0px #aaa;
 		}
 
 			.image.right img {
@@ -249,6 +247,7 @@
 		}
 		.wrapper.style1.first {
 			background-image: url('../img/backgrounds/white.jpg');
+			background-size: cover;
 			padding-top: 7em;
 		}
 

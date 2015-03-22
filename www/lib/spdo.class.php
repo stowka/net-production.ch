@@ -13,8 +13,8 @@
 		private $_PDOInstance = null;
 		const DEFAULT_SQL_HOST = 'localhost';
 		const DEFAULT_SQL_USER = 'root';
-		const DEFAULT_SQL_PASSWORD = '';
-		const DEFAULT_SQL_DATABASE = 'netprod';
+		const DEFAULT_SQL_PASSWORD = 'toor';
+		const DEFAULT_SQL_DATABASE = 'netprod-beta';
 
 		private static $_instance = null;
 

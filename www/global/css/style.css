@@ -946,6 +946,8 @@
 
 	#footer {
 		padding: 4em 0 1.5em 0;
+		background: url(../img/backgrounds/dark.jpg);
+		background-size: cover;
 	}
 
 		#footer a {
