@@ -28,9 +28,9 @@
                         <?php endif; ?>
 
         				<div class="inner">
-                        <h3><?= utf8_encode($member->getName())?></h3>
-                        <h4><?= utf8_encode($member->getPosition())?></h4>
-                        <p><?=utf8_encode($member->getBiography())?></p>
+                        <h3><?= $member->getName() ?></h3>
+                        <h4><?= $member->getPosition() ?></h4>
+                        <p><?= $member->getBiography() ?></p>
         				</div>
                     <?php 
                      else : ?>
@@ -47,9 +47,9 @@
                             <?php endif; ?>
 
                             <div class="inner">
-                            <h3 style="text-align:right;"><?= utf8_encode($member->getName())?></h3>
-                            <h4 style="text-align:right;"><?= utf8_encode($member->getPosition())?></h4>
-                            <p><?=utf8_encode($member->getBiography())?></p>
+                            <h3 style="text-align:right;"><?= $member->getName()?></h3>
+                            <h4 style="text-align:right;"><?= $member->getPosition()?></h4>
+                             <p><?= $member->getBiography() ?></p>
                             </div>
 
                    <?php endif; ?>
