@@ -18,7 +18,7 @@
 							<th class="text-center">
 								<i class="icon major fa-paper-plane"></i>
 								<br>
-								<h3><?php echo utf8_encode($commitment->getTitle()); ?></h3>
+								<h3><?php echo $commitment->getTitle(); ?></h3>
 							</th>
 						</tr>
 					</thead>
@@ -27,7 +27,7 @@
 							<td class="text-left">
 								<ul>
 									<?php $text = str_replace("\n","</li>",str_replace("-", "<li>", $commitment->getDescription())); ?>
-									<p><?php echo utf8_encode($text); ?></p>
+									<p><?php echo $text; ?></p>
 								</ul>
 							</td>
 						</tr>
