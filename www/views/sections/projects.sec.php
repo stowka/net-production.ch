@@ -12,8 +12,8 @@
 						<li class="4u">
 							<a 	href="http://cargocollective.com/jaimemartinez/" 
 								data-projects='
-								<?php foreach ($projects as $project):
-									echo "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\"></img>";
+								<?php foreach ($projects as $project): 
+									echo "<img class=\"square tada animated\" src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
 								endforeach; ?>'
 								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
 								data-title="<?php echo $type->getLabel() ?>">
@@ -28,3 +28,21 @@
 			</div>
 		</article>
 	</div>
+
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		var element = $('.square');
+
+		    element.mouseover(function(){
+		 	element.toggleClass('tada animated');
+		    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+		    	$(e.target).removeClass('tada animated');
+		    });
+	  
+	    });
+
+	});
+
+	</script>
