@@ -8,14 +8,21 @@
 			<div class="main container">
 				<ul id="og-grid" class="og-grid">
 					<?php foreach ($types as $type): ?>
-					<li class="4u">
-						<a href="http://cargocollective.com/jaimemartinez/" data-projects="projet1!www.net-production.ch!deltapianotrio.png-/-projet2!www.net-production.ch!pharmaciegeny.png" data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" data-title="<?php echo $type->getLabel() ?>" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-								<article class="box style2">
-									<span class="image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></span>
-									<h3><?php echo $type->getLabel()?></h3>
-								</article>
-						</a>
-					</li>
+						<?php $projects = Project::getAllByTypeAndLanguage($type->getId(), $lang);?>
+						<li class="4u">
+							<a 	href="http://cargocollective.com/jaimemartinez/" 
+								data-projects='
+								<?php foreach ($projects as $project):
+									echo "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\"></img><br>";
+								endforeach; ?>'
+								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
+								data-title="<?php echo $type->getLabel() ?>">
+									<article class="box style2">
+										<span class="image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></span>
+										<h3><?php echo $type->getLabel()?></h3>
+									</article>
+							</a>
+						</li>
 					<?php endforeach; ?>
 				</ul>
 			</div>
