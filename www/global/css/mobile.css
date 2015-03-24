@@ -7,6 +7,30 @@
     .\34 u, .\34 u\24 { 
          width: 100% !important;
     }
+    .image.left { 
+         float: none !important;
+         margin: auto auto !important;
+    }
+    .image.right {
+        float: none !important;
+        margin: auto auto !important;
+    }
+    .table {
+        margin: calc(15% + 1.5em) !important; 
+    }
+    p#mobdescr {
+        margin-left: 30px !important;
+        text-align: justify !important;
+    }
+    img.moblogo {
+        margin-left: 30px !important;
+    }
+    div.inner {
+        margin: calc(4% + 1em) !important;
+    }
+    h3, h4 {
+        text-align: center !important;
+    }
 
 }
 
@@ -85,3 +109,5 @@
         font-style: italic;
         color: #777;
 	}
+
+    
