@@ -401,8 +401,8 @@ var Grid = (function() {
 			
 			for (var i = 0; i < projectList.length; i++) {
 				splitted = projectList[i].split('!');
-				title = $('<h3></h3>').append(splitted[0]);
-				left = $('<div class="project-details" style="background-image:url(global/img/screenshots/' + splitted[2] +'"></div>');
+				title = $('<ul class="mosaique"></ul>').append(splitted[0]);
+				left = $('<div style="background-image:url(global/img/screenshots/' + splitted[2] +'"></div');
 				left.append(title);
 				this.largeLeft = left.fadeIn( 300 );
 				self.$fullimage.append( this.largeLeft );

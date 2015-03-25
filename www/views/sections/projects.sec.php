@@ -10,12 +10,22 @@
 					<?php foreach ($types as $type): ?>
 						<?php $projects = Project::getAllByTypeAndLanguage($type->getId(), $lang);?>
 						<li class="4u">
-							<a 	href="http://cargocollective.com/jaimemartinez/" 
+							<a 	
 								data-projects='
-								<?php foreach ($projects as $project): 
-									echo "<img class=\"square tada animated\" src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+								<?php 
+								foreach ($projects as $project): 
+									
+									echo "<li class=\"li-project\" ><div class=\"img-project square animated\" >",
+									 "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+									
+									echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
+									"<p>" . $project -> getDescription() . "</p></div>",
+									"</div></li>";
+
+
+
 								endforeach; ?>'
-								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
+								data-largesrc="" 
 								data-title="<?php echo $type->getLabel() ?>">
 									<article class="box style2">
 										<span class="image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></span>
@@ -34,14 +44,13 @@
 	$(document).ready(function(){
 
 		var element = $('.square');
+		$('body').on('mouseenter','.square', function() {
+			$(this).addClass('tada');
+		});
 
-		    element.mouseover(function(){
-		 	element.toggleClass('tada animated');
-		    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
-		    	$(e.target).removeClass('tada animated');
-		    });
-	  
-	    });
+		$('body').on('mouseleave','.square', function() {
+			$(this).removeClass('tada');
+		});
 
 	});
 
