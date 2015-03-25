@@ -85,7 +85,7 @@
 		var id = false;
 		var scrolled_id = false;
 		var $navbar = $('.navbar-nav');
-		$('a', $navbar).each(function(){
+		$('a.menu-icon', $navbar).each(function(){
 			sections.push($($(this).attr('href')));
 		});
 
