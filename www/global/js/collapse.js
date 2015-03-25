@@ -347,9 +347,9 @@ var Grid = (function() {
 			this.$href = $( '' );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
-			this.$fullimage = $( '<tbody class="og-fullimg"></tbody>' ).append( this.$loading );
+			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
-			this.$previewInner = $( '<table class="og-expander-inner container"></table>' ).append( this.$closePreview, this.$fullimage, this.$details );
+			this.$previewInner = $( '<div class="og-expander-inner container"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
 			this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
 			// append preview element to the item
 			this.$item.append( this.getEl() );
@@ -401,7 +401,7 @@ var Grid = (function() {
 			
 			for (var i = 0; i < projectList.length; i++) {
 				splitted = projectList[i].split('!');
-				title = $('<tr class="mosaique"></tr>').append(splitted[0]);
+				title = $('<ul class="mosaique"></ul>').append(splitted[0]);
 				left = $('<div style="background-image:url(global/img/screenshots/' + splitted[2] +'"></div');
 				left.append(title);
 				this.largeLeft = left.fadeIn( 300 );

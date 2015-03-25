@@ -14,16 +14,18 @@
 								data-projects='
 								<?php $rowProject = 1;
 								foreach ($projects as $project): 
-
-									echo "<td><div class=\"img-project\" ><img class=\" square animated\" src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+									
+									echo "<li class=\"li-project\" ><div class=\"img-project square animated\" ><img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+									
+									echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
+									"<p>" . $project -> getDescription() . "</p></div>",
+									"</div></li>";
+									
 									$rowProject += 1;
-									echo "<p class=\"title-project\" >" . $project -> getTitle() . "</p>",
-									"</div></td>";
-										
 
-										if($rowProject % 3 === 0):
-											echo "</tr><tr>";
-										endif;
+										// if($rowProject % 3 === 0):
+										// 	echo "</tr><tr>";
+										// endif;
 									
 								endforeach; ?>'
 								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
