@@ -31,6 +31,12 @@
     h3, h4 {
         text-align: center !important;
     }
+    .animated {
+        text-decoration: none;
+    }
+    .tada {
+        text-decoration: none;
+    }
 
 }
 

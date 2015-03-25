@@ -10,10 +10,21 @@
 					<?php foreach ($types as $type): ?>
 						<?php $projects = Project::getAllByTypeAndLanguage($type->getId(), $lang);?>
 						<li class="4u">
-							<a 	href="http://cargocollective.com/jaimemartinez/" 
+							<a 	
 								data-projects='
-								<?php foreach ($projects as $project): 
-									echo "<img class=\"square tada animated\" src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+								<?php $rowProject = 1;
+								foreach ($projects as $project): 
+
+									echo "<td><div class=\"img-project\" ><img class=\" square animated\" src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+									$rowProject += 1;
+									echo "<p class=\"title-project\" >" . $project -> getTitle() . "</p>",
+									"</div></td>";
+										
+
+										if($rowProject % 3 === 0):
+											echo "</tr><tr>";
+										endif;
+									
 								endforeach; ?>'
 								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
 								data-title="<?php echo $type->getLabel() ?>">
@@ -34,14 +45,13 @@
 	$(document).ready(function(){
 
 		var element = $('.square');
+		$('body').on('mouseenter','.square', function() {
+			$(this).addClass('tada');
+		});
 
-		    element.mouseover(function(){
-		 	element.toggleClass('tada animated');
-		    element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
-		    	$(e.target).removeClass('tada animated');
-		    });
-	  
-	    });
+		$('body').on('mouseleave','.square', function() {
+			$(this).removeClass('tada');
+		});
 
 	});
 
