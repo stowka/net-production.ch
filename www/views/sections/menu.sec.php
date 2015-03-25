@@ -36,17 +36,23 @@
 							<img src="global/img/icons/contact.png" width="20px">&nbsp;&nbsp;Contact
 						</a>
 					</li>
-					<li class="navbar-right">
-					<?php 
-						if ($lang == "fr_CH"): ?>
-							<a class="menu menu-right" href="?lang=en_UK">
-								English
-							</a>
-					<?php else : ?>
-							<a class="menu menu-right" href="?lang=fr_CH">
-								Fran&ccedil;ais
-							</a>
-					<?php endif; ?>
+					<li class="navbar-right"> 
+						<a class="menu menu-right" href="?lang=en_UK">
+							<?php if($lang == "en_UK"): ?>
+								<b class="selected"> en </b>
+							<?php else : ?>
+								en
+							<?php endif; ?>
+						</a>
+					</li>
+					<li class="navbar-right"> 
+						<a class="menu menu-right" href="?lang=fr_CH" >
+							<?php if($lang == "fr_CH"): ?>
+								<b class="selected"> fr </b>
+							<?php else : ?>
+								fr
+							<?php endif; ?>
+						</a>
 					</li>
 				</ul>
 		</div>
