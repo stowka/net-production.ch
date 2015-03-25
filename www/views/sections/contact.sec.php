@@ -77,7 +77,7 @@
 					<div id="trait"></div>
 					<div class="row 50%">
 						<div class="12u">
-							<textarea name="message" class="form-control" placeholder="<?php echo $value['contact-message'];?>" rows="5" id="message" style="resize: none;"></textarea>
+							<textarea style="width:582px; resize:none;" name="message" class="form-control" placeholder="<?php echo $value['contact-message'];?>" rows="5" id="message" style="resize: none;"></textarea>
 						</div>
 					</div>
 					<div class="row 50%">

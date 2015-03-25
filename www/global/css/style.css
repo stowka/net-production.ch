@@ -379,7 +379,7 @@
 			margin: 0 0 2em 0;
 		}
 
-			.icon.major:before {
+			.major:before {
 				font-size: 36px;
 			}
 
@@ -756,7 +756,7 @@
 				border: 0;
 			} */
 
-	#nav {
+	.nav {
 		background-color: #282828;
 		text-align: center;
 		position: fixed;
@@ -767,15 +767,15 @@
 		cursor: default;
 	}
 	
-		#nav ul {
+		.nav ul {
 			margin-bottom: 0;
 		}
 	
-		#nav li {
+		.nav li {
 			display: inline-block;
 		}
 		
-		#nav a {
+		.nav a {
 			position: relative;
 			display: block;
 			color: #fff;
@@ -783,11 +783,11 @@
 			outline: 0;
 		}
 		
-			#nav a:hover {
+			.nav a:hover {
 				color: #fff !important;
 			}
 			
-			#nav a.active:before {
+			.nav a.active:before {
 				content: '';
 				display: block;
 				position: absolute;

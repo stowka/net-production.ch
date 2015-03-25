@@ -10,12 +10,14 @@
 		private $title;
 		private $description;
 		private $language;
+		private $picture;
 
 		function __construct(){
 			$this->id = 0;
 			$this->title = "";
 			$this->description = "";
 			$this->language = "";
+			$this->picture = "";
 		}
 
 		public static function initWithId($id) {
@@ -30,14 +32,16 @@
 			$instance->setTitle($row['title']);
 			$instance->setDescription($row['description']);
 			$instance->setLanguage(Language::initWithId($row['language']));
+			$instance->setPicture($row['picture']);
 			return $instance;
 		}
 
-		public static function initWithData($title, $description, $language) {
+		public static function initWithData($title, $description, $language, $picture) {
 			$instance = new self();
 			$instance->setTitle($title);
 			$instance->setDescription($description);
 			$instance->setLanguage($language);
+			$instance->setPicture($picture);
 			return $instance;
 		}
 
@@ -45,17 +49,18 @@
 			if (!empty($this->title) && !empty($this->description) 
 				&& !empty($this->language)) {
 				$dbh = SPDO::getInstance();
-				$stmt = $dbh->prepare("INSERT INTO commitment(title, description, language)
-					VALUES (:title, :description, :language);");
+				$stmt = $dbh->prepare("INSERT INTO commitment(title, description, picture, language)
+					VALUES (:title, :description, :picture ,:language);");
 				$stmt->bindParam(":title", $this->title, PDO::PARAM_STR);
 				$stmt->bindParam(":description", $this->description, PDO::PARAM_STR);
+				$stmt->bindParam(":picture", $this->picture, PDO::PARAM_STR);
 				$stmt->bindParam(":language", $this->language, PDO::PARAM_STR);
 				$stmt->execute();
 				$this->id = $dbh->lastInsertId();
 				$stmt->closeCursor();
 			}
 			else
-				echo "Error : Incorrect title, description or language.";
+				echo "Error : Incorrect title, description, picture or language.";
 		}
 
 		public function delete() {
@@ -106,6 +111,10 @@
 			return $this->language;
 		}
 
+		function getPicture() {
+			return $this->picture;
+		}
+
 		/**
 		 * Setters
 		 */
@@ -124,6 +133,10 @@
 
 		function setLanguage($language) {
 			$this->language = $language;
+		}
+
+		function setPicture($picture) {
+			$this->picture = $picture;
 		}
 	}
 ?>
