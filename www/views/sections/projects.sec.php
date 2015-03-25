@@ -22,8 +22,10 @@
 									"<p>" . $project -> getDescription() . "</p></div>",
 									"</div></li>";
 
+
+
 								endforeach; ?>'
-								data-largesrc="global/img/categories/<?php echo $type->getImage(); ?>" 
+								data-largesrc="" 
 								data-title="<?php echo $type->getLabel() ?>">
 									<article class="box style2">
 										<span class="image"><img src="global/img/categories/<?php echo $type->getImage(); ?>" alt="<?php echo $type->getLabel(); ?>"/></span>
