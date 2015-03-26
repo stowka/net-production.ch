@@ -85,6 +85,10 @@
 		-ms-filter: grayscale(0);
 	}
 
+	.navbar-nav > li.navbar-right {
+		float: right !important;
+		padding-right: 20px;
+	}
 
 /* Grid */
 
@@ -276,3 +280,7 @@
 		.\-3u { margin-left: 25% }
 		.\-2u { margin-left: 16.6666666667% }
 		.\-1u { margin-left: 8.3333333333% }
+
+		b.selected{
+			color: #de5e54;
+		}

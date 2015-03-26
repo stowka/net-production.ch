@@ -205,7 +205,7 @@
 		margin-bottom: 0.25em;
 		position: relative;
 		padding-top: inherit;
-		margin-top: 83px;
+		margin-top: 4.5em;
 		color: black;
 		font-weight: bold;
 	}
@@ -407,8 +407,8 @@
 	}
 
 	.square {
-		width: 120px;
-		height: 120px;
+		width: 170px;
+		height: 170px;
 		padding: 2px 2px;
 	}
 
@@ -431,8 +431,114 @@
 		color: black;
 	}
 
-	.wrapper.style2 {
+	div.title-project{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		display: table;
+		top: 0;
+		left: 0;
 	}
+
+	div.title-project h2 {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 50px;
+		height: 100%;
+		color: #fff;
+		font-size: 20px;
+		margin: 0;
+		line-height: 26px;
+	}
+
+	/* test project */
+
+	.mosaique {
+		width: 100%;
+	}
+
+	.mosaique img {
+
+		/*display:block;*/
+		width:180px;
+		height:180px;
+		float:left;
+		padding:0px;
+		margin-left:0px;
+		margin-right:5px;
+		margin-bottom:5px;
+		margin-top:0px
+
+	}
+
+	.img-project {
+		display: inline-block;
+		line-height: 0;
+		verflow: hidden;
+		position: relative;
+		margin: -50px 0 -12px 0;
+	}
+
+	.img-project img {
+ 		line-height: 0;
+ 		box-shadow: 1px 1px 12px #555;
+	}
+
+	.img-project:hover img {
+		filter: grayscale(100%);
+	    -webkit-filter: grayscale(100%);
+	    -moz-filter: grayscale(100%);
+	    -ms-filter: grayscale(100%);
+	    -o-filter: grayscale(100%);
+	}
+
+	.img-project .title-project {
+		/*width: 175px;
+		height: 180px;*/
+		background: rgba(0, 0, 0, 0.6);
+		color: white;
+		line-height: normal;
+		width: 166px;
+		height: 166px;
+		padding: 10px;
+		position: absolute;
+		top: 52px;
+		left: 2px;
+		text-align: justify;
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+		filter: alpha(opacity=0);
+		opacity: 0;
+
+		-webkit-transition: opacity 0.2s linear;
+		-moz-transition: opacity 0.2s linear;
+		-o-transition: opacity 0.2s linear;
+		-ms-transition: opacity 0.2s linear;
+		transition: opacity 0.2s linear;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-box-sizing: border-box;
+	}
+
+	.img-project:hover .title-project {
+  		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  		filter: alpha(opacity=80);
+  		opacity: 1;
+  		text-shadow: 2px 2px 4px black;
+	}
+
+	.li-project {
+		margin: 4px 0 34px 0 !important;
+		min-height: 141px !important;
+		width: 28% !important;
+	}
+
+	.title-project h3 {
+		line-height: 0.8em;
+	}
+
 
 	/* twitter - facebook - linkedin */
 

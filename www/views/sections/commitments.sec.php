@@ -15,7 +15,7 @@
 						<thead>
 							<tr>
 								<th class="text-center">
-									<img src="global/img/icons/<?php echo $commitment->getPicture(); ?>" alt="<?php echo $commitment->getPicture()?>">
+									<img style="width:80px; height:90px;" src="global/img/icons/<?php echo $commitment->getPicture(); ?>" alt="<?php echo $commitment->getPicture()?>">
 									<h3><?php echo $commitment->getTitle(); ?></h3>
 								</th>
 							</tr>

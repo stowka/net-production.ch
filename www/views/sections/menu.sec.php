@@ -36,6 +36,24 @@
 							<img src="global/img/icons/contact.png" width="20px">&nbsp;&nbsp;Contact
 						</a>
 					</li>
+					<li class="navbar-right"> 
+						<a class="menu menu-right" href="?lang=en_UK">
+							<?php if($lang == "en_UK"): ?>
+								<b class="selected"> en </b>
+							<?php else : ?>
+								en
+							<?php endif; ?>
+						</a>
+					</li>
+					<li class="navbar-right"> 
+						<a class="menu menu-right" href="?lang=fr_CH" >
+							<?php if($lang == "fr_CH"): ?>
+								<b class="selected"> fr </b>
+							<?php else : ?>
+								fr
+							<?php endif; ?>
+						</a>
+					</li>
 				</ul>
 		</div>
 	</nav>
@@ -67,7 +85,7 @@
 		var id = false;
 		var scrolled_id = false;
 		var $navbar = $('.navbar-nav');
-		$('a', $navbar).each(function(){
+		$('a.menu-icon', $navbar).each(function(){
 			sections.push($($(this).attr('href')));
 		});
 
