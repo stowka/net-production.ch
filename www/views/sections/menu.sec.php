@@ -79,8 +79,9 @@
 					<header>
 						<img class="moblogo" src="global/img/logos/Logo-Black-Full-without-icon.png">
 					</header>
-						<p id="mobdescr" style="font-size:1.40em;">Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
-						
+					<?php foreach ($homes as $home): ?>
+						<p id="mobdescr" style="font-size:1.40em;"><?php echo $home->getText(); ?></p>
+					<?php endforeach; ?>	
 				</div>
 			</div>
 		</article>
