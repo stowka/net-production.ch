@@ -13,6 +13,7 @@
 
 	<!-- STYLESHEETS -->
 
+		<!--<link rel="stylesheet" href="global/css/bootstrap.css" />-->
 		<link rel="stylesheet" href="global/css/skel.css" />
 		<link rel="stylesheet" href="global/css/style.css" />
 		<link rel="stylesheet" href="global/css/style-wide.css" />
@@ -37,4 +38,5 @@
 	<script src="global/js/skel-layers.min.js"></script>
 	<script src="global/js/init.js"></script>
 	<script src="global/js/modernizr.custom.js"></script>
+	<script src="global/js/bootstrap.min.js"></script>
 </head>

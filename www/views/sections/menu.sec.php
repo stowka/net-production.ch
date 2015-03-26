@@ -8,54 +8,63 @@
 
 	<!-- Nav -->
 	<span id="home"> </span>
-	<nav class="nav" role="navigation">
-		<div class="container">
-				<ul class="nav navbar-nav">
-					<li>
-						<a class="menu menu-icon" href="#home">
-							<img src="global/img/icons/home.png" width="20px">&nbsp;&nbsp;Home
-						</a>
-					</li>
-					<li>
-						<a class="menu menu-icon" href="#commitments">
-							<img src="global/img/icons/commitments.png" width="20px">&nbsp;&nbsp;Commitments
-						</a>
-					</li>
-					<li>
-						<a class="menu menu-icon" href="#projects">
-							<img src="global/img/icons/projects.png" width="20px">&nbsp;&nbsp;Projects
-						</a>
-					</li>
-					<li>
-						<a class="menu menu-icon" href="#teams">
-							<img src="global/img/icons/team.png" width="20px">&nbsp;&nbsp;Team
-						</a>
-					</li>
-					<li>
-						<a class="menu menu-icon" href="#contacts">
-							<img src="global/img/icons/contact.png" width="20px">&nbsp;&nbsp;Contact
-						</a>
-					</li>
-					<li class="navbar-right"> 
-						<a class="menu menu-right" href="?lang=en_UK">
-							<?php if($lang == "en_UK"): ?>
-								<b class="selected"> en </b>
-							<?php else : ?>
-								en
-							<?php endif; ?>
-						</a>
-					</li>
-					<li class="navbar-right"> 
-						<a class="menu menu-right" href="?lang=fr_CH" >
-							<?php if($lang == "fr_CH"): ?>
-								<b class="selected"> fr </b>
-							<?php else : ?>
-								fr
-							<?php endif; ?>
-						</a>
-					</li>
-				</ul>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+	 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	 			<span class="sr-only">Toggle navigation</span>
+	 			<span class="icon-bar"></span>
+	 			<span class="icon-bar"></span>
+	 			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Net-Production</a>
 		</div>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li class="menu-item">
+					<a class="menu menu-icon" href="#home">
+						<img src="global/img/icons/home.png" width="20px">&nbsp;&nbsp;Home
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu menu-icon" href="#commitments">
+						<img src="global/img/icons/commitments.png" width="20px">&nbsp;&nbsp;Commitments
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu menu-icon" href="#projects">
+						<img src="global/img/icons/projects.png" width="20px">&nbsp;&nbsp;Projects
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu menu-icon" href="#teams">
+						<img src="global/img/icons/team.png" width="20px">&nbsp;&nbsp;Team
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu menu-icon" href="#contacts">
+						<img src="global/img/icons/contact.png" width="20px">&nbsp;&nbsp;Contact
+					</a>
+				</li>
+				<li class="navbar-right"> 
+					<a class="menu menu-right" href="?lang=en_UK">
+						<?php if($lang == "en_UK"): ?>
+							<b class="selected"> en </b>
+						<?php else : ?>
+							en
+						<?php endif; ?>
+					</a>
+				</li>
+				<li class="navbar-right"> 
+					<a class="menu menu-right" href="?lang=fr_CH" >
+						<?php if($lang == "fr_CH"): ?>
+							<b class="selected"> fr </b>
+						<?php else : ?>
+							fr
+						<?php endif; ?>
+					</a>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
 	</nav>
 
 	<!-- header + logo -->
