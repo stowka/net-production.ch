@@ -554,4 +554,7 @@
 		color: white !important;
 	}
 
+	#titleBar{
+		visibility: hidden;
+	}
 

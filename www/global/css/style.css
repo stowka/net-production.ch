@@ -772,7 +772,7 @@
 		}
 	
 		.nav li {
-			display: inline-block;
+			display: block;
 		}
 		
 		.nav a {
