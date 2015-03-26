@@ -18,31 +18,32 @@
 			</button>
 			<a class="navbar-brand" href="#home">Net-Production</a>
 		</div>
+		<!-- /.navbar-collapse -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">y
 			<ul class="nav navbar-nav">
 				<li class="menu-item">
-					<a class="menu menu-icon" href="#home">
-						<img src="global/img/icons/home.png" width="20px">&nbsp;&nbsp;Home
+					<a class="menu menu-icon" href="#<?= $h->getKeyword() ?>">
+						<img src="global/img/icons/<?= $h->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $h->getValue() ?>
 					</a>
 				</li>
 				<li class="menu-item">
-					<a class="menu menu-icon" href="#commitments">
-						<img src="global/img/icons/commitments.png" width="20px">&nbsp;&nbsp;Commitments
+					<a class="menu menu-icon" href="#<?= $com->getKeyword() ?>">
+						<img src="global/img/icons/<?= $com->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $com->getValue() ?>
 					</a>
 				</li>
 				<li class="menu-item">
-					<a class="menu menu-icon" href="#projects">
-						<img src="global/img/icons/projects.png" width="20px">&nbsp;&nbsp;Projects
+					<a class="menu menu-icon" href="#<?= $pro->getKeyword() ?>">
+						<img src="global/img/icons/<?= $pro->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $pro->getValue() ?>
 					</a>
 				</li>
 				<li class="menu-item">
-					<a class="menu menu-icon" href="#teams">
-						<img src="global/img/icons/team.png" width="20px">&nbsp;&nbsp;Team
+					<a class="menu menu-icon" href="#<?= $t->getKeyword() ?>">
+						<img src="global/img/icons/<?= $t->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $t->getValue() ?>
 					</a>
 				</li>
 				<li class="menu-item">
-					<a class="menu menu-icon" href="#contacts">
-						<img src="global/img/icons/contact.png" width="20px">&nbsp;&nbsp;Contact
+					<a class="menu menu-icon" href="#<?= $co->getKeyword() ?>">
+						<img src="global/img/icons/<?= $co->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $co->getValue() ?>
 					</a>
 				</li>
 				<li class="navbar-right"> 
@@ -64,7 +65,7 @@
 					</a>
 				</li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
+		</div>
 	</nav>
 
 	<!-- header + logo -->
@@ -88,9 +89,7 @@
 	</div>
 
 <script type="text/javascript">
-
 	$(document).ready(function(){
-
 		var sections = [];
 		var id = false;
 		var scrolled_id = false;
@@ -98,7 +97,6 @@
 		$('a.menu-icon', $navbar).each(function(){
 			sections.push($($(this).attr('href')));
 		});
-
 		$(window).scroll(function(e){
 			var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
 			for(var i in sections){
@@ -113,7 +111,6 @@
 				$('a[href="#' + scrolled_id + '"]', $navbar).addClass('active');
 			}
 		});
-
 	});
 </script>
 

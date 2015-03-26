@@ -6,7 +6,7 @@
 	 */
 ?>
 <!-- Posts -->
-<section class="wrapper style1" id="teams">
+<section class="wrapper style1" id="team">
 	<div class="container">
 
     <?php $rowTeam = 1; ?>
