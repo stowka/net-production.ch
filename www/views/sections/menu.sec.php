@@ -76,7 +76,7 @@
 				<div class="4u">
 					<span class="image fit"><img class="moblogo" src="global/img/logos/logo.png" alt="" /></span>
 				</div>
-				<div class="">
+				<div class="8u home-text">
 					<header>
 						<img class="moblogo" src="global/img/logos/Logo-Black-Full-without-icon.png">
 					</header>
