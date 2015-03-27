@@ -9,7 +9,7 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 20px;
+	margin: 40px;
 	vertical-align: top;
 	min-height: 250px;
 	width: 24%;
@@ -200,7 +200,8 @@
 
 	}
 	.og-grid li {
-		width: 31%;
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 1024px) {

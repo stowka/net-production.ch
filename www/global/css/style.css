@@ -904,7 +904,7 @@
 			background-position: top left,						bottom left,					top left;
 /*			background-size: 100% 6em,						100% 6em,						auto;
 *//*			background-repeat: no-repeat,						no-repeat,						repeat;
-*/			background-image: url('../img/backgrounds/black.jpg');
+*/			background: url('../img/backgrounds/black.jpg') no-repeat;
 		}
 
 		.wrapper.style3 {
