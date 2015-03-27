@@ -195,10 +195,18 @@
 
 @media screen and (max-width: 830px) {
 
-	.og-expander h3 { font-size: 32px; }
-	.og-expander p { font-size: 13px; }
-	.og-expander a { font-size: 12px; }
+	.og-expander h3 { font-size: 10px; }
+	.og-expander p { font-size: 10px; }
+	.og-expander p.mob-h3-project { display: none; }
+	.og-expander a { font-size: 10px; }
 
+}
+
+@media screen and (max-width: 1024px) {
+
+	.og-fullimg li {
+		margin: 0 19px 50px 25px !important;
+	}
 }
 
 @media screen and (max-width: 650px) {
@@ -217,6 +225,11 @@
 	.og-fullimg ul.mosaique {
 		max-width: 100%;
 		margin-left: -27px !important;
+	}
+
+	.img-project .title-project {
+		width: 80px;
+		height: 80px;
 	}
 
 	.og-details { float: none; width: 100%; }
