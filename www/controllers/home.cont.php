@@ -13,4 +13,8 @@
     require_once "controllers/vocabulary.cont.php";
     require_once "controllers/partner.cont.php";
 
+    $homes = Home::getAll($lang);
+
     require_once "views/home.view.php";
+
+

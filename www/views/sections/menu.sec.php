@@ -8,7 +8,7 @@
 
 	<!-- Nav -->
 	<span id="home"> </span>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="navbar-header">
 	 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 	 			<span class="sr-only">Toggle navigation</span>
@@ -16,9 +16,9 @@
 	 			<span class="icon-bar"></span>
 	 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Net-Production</a>
+			<a class="navbar-brand" href="#home">Net-Production</a>
 		</div>
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
+		<div class="collapse navbar-collapse navbar-ex1-collapse">y
 			<ul class="nav navbar-nav">
 				<li class="menu-item">
 					<a class="menu menu-icon" href="#home">
@@ -79,8 +79,9 @@
 					<header>
 						<img class="moblogo" src="global/img/logos/Logo-Black-Full-without-icon.png">
 					</header>
-						<p id="mobdescr" style="font-size:1.40em;">Notre agence web est là pour répondre à tous vos besoin, de site internet, applications mobiles à carte de visite et graphisme</p>
-						
+					<?php foreach ($homes as $home): ?>
+						<p id="mobdescr" style="font-size:1.40em;"><?php echo $home->getText(); ?></p>
+					<?php endforeach; ?>	
 				</div>
 			</div>
 		</article>
@@ -113,5 +114,11 @@
 			}
 		});
 
+	});
+</script>
+
+<script type="text/javascript">
+	$('.nav a').on('click', function(){
+	    $(".navbar-toggle").click(); //bootstrap 3.x by Richard
 	});
 </script>

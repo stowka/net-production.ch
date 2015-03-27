@@ -13,7 +13,8 @@
 
 	<!-- STYLESHEETS -->
 
-		<!--<link rel="stylesheet" href="global/css/bootstrap.css" />-->
+		<link rel="stylesheet" href="global/css/bootstrap.css" />
+		<!-- <link rel="stylesheet" href="global/css/bootstrap-theme.css" /> -->
 		<link rel="stylesheet" href="global/css/skel.css" />
 		<link rel="stylesheet" href="global/css/style.css" />
 		<link rel="stylesheet" href="global/css/style-wide.css" />

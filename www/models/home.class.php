@@ -54,20 +54,22 @@
         public function delete() {
             $dbh = SPDO::getInstance();
             $stmt = $dbh->prepare("DELETE FROM home WHERE id = :id;");
+            $stmt->bindParam(":lang", $lang, PDO::PARAM_STR);
             $stmt->bindParam(":id", $this->id, PDO::PARAM_INT);
             $stmt->execute();
             $stmt->closeCursor();
         }
 
-        public static function getAll() {
+        public static function getAll($lang = "en_UK") {
             $dbh = SPDO::getInstance();
-            $stmt = $dbh->prepare("SELECT id FROM home;");
+            $stmt = $dbh->prepare("SELECT id FROM home WHERE language = :lang;");
+            $stmt->bindParam(":lang", $lang, PDO::PARAM_STR);
             $stmt->execute();
             $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
             $stmt->closeCursor();
             $homes = Array();
             foreach ($rows as $row)
-                $homes[] = Project::initWithId($row['id']);
+                $homes[] = Home::initWithId($row['id']);
             return $homes;
         }
 

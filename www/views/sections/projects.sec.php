@@ -15,14 +15,13 @@
 								<?php 
 								foreach ($projects as $project): 
 									
-									echo "<li class=\"li-project\" ><div class=\"img-project square animated\" >",
+									echo "<li class=\"li-project\" ><a href=\"" . $project -> getUrl() ."\" target=\"_blanck\"><div class=\"img-project square animated\" >",
+									 
 									 "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
 									
 									echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
 									"<p>" . $project -> getDescription() . "</p></div>",
-									"</div></li>";
-
-
+									"</div></a></li>";
 
 								endforeach; ?>'
 								data-largesrc="" 
