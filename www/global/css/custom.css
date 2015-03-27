@@ -580,7 +580,10 @@
 		color: white !important;
 	}
 
+	/* titleBar */
+
 	#titleBar{
 		visibility: hidden;
 	}
+
 

@@ -8,6 +8,6 @@
 <!-- Copyright -->
 <div class="copyright">
 	<ul class="menu">
-		<li>&copy; Net Production K&ouml;be & Co. All rights reserved</li>
+		<li>&copy; Net Production K&ouml;be & Co. <?= $right->getValue() ?></li>		
 	</ul>
 </div>

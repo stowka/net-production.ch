@@ -92,7 +92,7 @@
 		</div>
 	</div>
 
-	<?php includeSection('icons'); ?>
-	<?php includeSection('copyright'); ?>
+	<?php require_once('views/sections/icons.sec.php'); ?>
+	<?php require_once('views/sections/copyright.sec.php'); ?>
 
 </div>
