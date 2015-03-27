@@ -21,6 +21,7 @@
 	display: block;
 	position: relative;
 	text-decoration: none !important;
+	cursor: pointer !important;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -36,6 +37,7 @@
 	border-width: 15px;
 	left: 50%;
 	margin: -20px 0 0 -15px;
+	cursor: pointer !important;
 }
 
 .og-expander {
