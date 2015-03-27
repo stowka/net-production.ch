@@ -14,6 +14,14 @@
     require_once "controllers/partner.cont.php";
 
     $homes = Home::getAll($lang);
+    $menu = Vocabulary::getAll($lang);
+
+    $homes = Home::getAll($lang);
+    $h = Vocabulary::getMenu("home", $lang);
+    $com = Vocabulary::getMenu("commitments", $lang);
+    $pro = Vocabulary::getMenu("projects", $lang); 
+    $t = Vocabulary::getMenu("team", $lang);
+    $co = Vocabulary::getMenu("contact", $lang);
 
     require_once "views/home.view.php";
 

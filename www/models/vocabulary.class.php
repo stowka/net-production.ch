@@ -86,6 +86,17 @@
             $stmt->closeCursor();
         }
 
+        public static function getMenu($keyword, $language) {
+            $dbh = SPDO::getInstance();
+            $stmt = $dbh->prepare("SELECT id FROM vocabulary WHERE keyword = :keyword AND language = :language;");
+            $stmt->bindParam(":keyword", $keyword, PDO::PARAM_STR);
+            $stmt->bindParam(":language", $language, PDO::PARAM_STR);
+            $stmt->execute();
+            $row = $stmt->fetch();
+            $stmt->closeCursor();
+            return Vocabulary::initWithId($row['id']);
+        }
+
 
         /*
          * Getters

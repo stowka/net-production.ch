@@ -7,7 +7,7 @@
 ?>
 <!-- Footer -->
 <div id="footer">
-	<div class="container" id="contacts">
+	<div class="container" id="contact">
 		<div class="row">
 			<!--<section class="3u 6u(narrower) 12u$(mobilep)">
 				<h3>Augue mi Morbi</h3>
