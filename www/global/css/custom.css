@@ -253,7 +253,7 @@
 			background-image: none;
 		}
 		.wrapper.style1.first {
-			background-image: url('../img/backgrounds/white.jpg');
+			background-image: url('../img/backgrounds/black.jpg');
 			background-size: cover;
 			padding-top: 7em;
 		}
@@ -281,6 +281,7 @@
 		#top p{
 			font-size: 1em;
 			line-height: 1.5em;
+			color: white;
 
 		}
 	
