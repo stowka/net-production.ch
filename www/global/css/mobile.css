@@ -111,4 +111,17 @@
         color: #777;
 	}
 
-    
+    ul.actions:last-child {
+        text-align: right
+    }
+
+    @media (max-width: 768px) {
+        .nav > li > a > img {
+            visibility: hidden;
+        }
+
+        ul.actions:last-child {
+            padding-bottom: 50px;
+            text-align: center;
+        }
+    }
