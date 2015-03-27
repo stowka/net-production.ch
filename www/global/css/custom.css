@@ -217,6 +217,11 @@
 		font-weight: bold;
 	}
 
+	.box.style2 h3:hover {
+		text-decoration: none !important;
+		color: #f47661;
+	}
+
 	.box.style2 p {
 		color: #5E605F;
 	}
@@ -256,6 +261,16 @@
 			background-image: url('../img/backgrounds/black.jpg');
 			background-size: cover;
 			padding-top: 7em;
+		}
+
+		.wrapper.style2 {
+			background-color: #fff;
+			/*background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");*/
+			background-position: top left,						bottom left,					top left;
+/*			background-size: 100% 6em,						100% 6em,						auto;
+*//*			background-repeat: no-repeat,						no-repeat,						repeat;
+*/			background: url('../img/backgrounds/black.jpg') no-repeat;
+			background-size: cover;
 		}
 
 		.wrapper.first {

@@ -20,12 +20,13 @@
 	outline: none;
 	display: block;
 	position: relative;
-	/*margin-top: 17px;*/
+	text-decoration: none !important;
 }
 
 .og-grid li.og-expanded > a::after {
 	top: auto;
 	border: solid transparent;
+	text-decoration: none !important;
 	content: " ";
 	height: 0;
 	width: 0;
