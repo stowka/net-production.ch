@@ -258,6 +258,16 @@
 			padding-top: 7em;
 		}
 
+		.wrapper.style2 {
+			background-color: #fff;
+			/*background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");*/
+			background-position: top left,						bottom left,					top left;
+/*			background-size: 100% 6em,						100% 6em,						auto;
+*//*			background-repeat: no-repeat,						no-repeat,						repeat;
+*/			background: url('../img/backgrounds/black.jpg') no-repeat;
+			background-size: cover;
+		}
+
 		.wrapper.first {
 			padding-top: 12em;
 			box-shadow: none;
