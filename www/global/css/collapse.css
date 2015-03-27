@@ -20,12 +20,14 @@
 	outline: none;
 	display: block;
 	position: relative;
+	text-decoration: none !important;
 	/*margin-top: 17px;*/
 }
 
 .og-grid li.og-expanded > a::after {
 	top: auto;
 	border: solid transparent;
+	text-decoration: none !important;
 	content: " ";
 	height: 0;
 	width: 0;

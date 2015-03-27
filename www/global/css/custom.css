@@ -217,6 +217,11 @@
 		font-weight: bold;
 	}
 
+	.box.style2 h3:hover {
+		text-decoration: none !important;
+		color: #f47661;
+	}
+
 	.box.style2 p {
 		color: #5E605F;
 	}
