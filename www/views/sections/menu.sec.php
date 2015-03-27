@@ -78,7 +78,7 @@
 				</div>
 				<div class="8u home-text">
 					<header>
-						<img class="moblogo" src="global/img/logos/Logo-Black-Full-without-icon.png">
+						<img class="moblogo" src="global/img/logos/Logo white_text.png">
 					</header>
 					<?php foreach ($homes as $home): ?>
 						<p id="mobdescr" style="font-size:1.40em;"><?php echo $home->getText(); ?></p>
