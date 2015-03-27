@@ -20,7 +20,7 @@
 									 "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
 									
 									echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
-									"<p>" . $project -> getDescription() . "</p></div>",
+									"<p class=\"mob-h3-project\">" . $project -> getDescription() . "</p></div>",
 									"</div></a></li>";
 
 								endforeach; ?>'

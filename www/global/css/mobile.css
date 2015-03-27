@@ -19,11 +19,12 @@
         margin: calc(15% + 1.5em) !important; 
     }
     p#mobdescr {
-        margin-left: 30px !important;
-        text-align: justify !important;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        text-align: center !important;
     }
     img.moblogo {
-        margin-left: 30px !important;
+        margin: 10px; !important;
     }
     div.inner {
         margin: calc(4% + 1em) !important;
@@ -111,4 +112,17 @@
         color: #777;
 	}
 
-    
+    ul.actions:last-child {
+        text-align: right
+    }
+
+    @media (max-width: 768px) {
+        .nav > li > a > img {
+            visibility: hidden;
+        }
+
+        ul.actions:last-child {
+            padding-bottom: 50px;
+            text-align: center;
+        }
+    }
