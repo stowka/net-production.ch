@@ -230,11 +230,12 @@
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
 		text-align: center;
-		width: 100%;
+		/*width: 100%;*/
 	}
 
-	.box {
+	.box.style2 {
 		padding: 2em;
+		width: 300px;
 	}
 
 	/* test */
@@ -586,4 +587,18 @@
 		visibility: hidden;
 	}
 
-
+.partner {
+	width: 80%;
+	margin: 30px 0;
+}
+.partner img {
+	max-width: 300px;
+	vertical-align: middle;
+}
+.partner h3 {
+	display: inline-block;
+	margin-left: 20px;
+}
+.partner:hover a {
+	text-decoration: none;
+}
