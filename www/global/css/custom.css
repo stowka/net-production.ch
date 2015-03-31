@@ -234,8 +234,8 @@
 	}
 
 	.box.style2 {
-		padding: 2em;
-		width: 300px;
+		padding: 2.1em 2em 1em 2em;
+		width: 295px;
 	}
 
 	/* test */
@@ -262,6 +262,7 @@
 			background-image: url('../img/backgrounds/black.jpg');
 			background-size: cover;
 			padding-top: 7em;
+			box-shadow: 20px;
 		}
 
 		.wrapper.style2 {
@@ -272,11 +273,12 @@
 *//*			background-repeat: no-repeat,						no-repeat,						repeat;
 */			background: url('../img/backgrounds/black.jpg') no-repeat;
 			background-size: cover;
+			box-shadow: 0 5px 5px #999;
 		}
 
 		.wrapper.first {
 			padding-top: 12em;
-			box-shadow: none;
+			box-shadow: 0 5px 5px #999;
 		}
 
 		/* top */
