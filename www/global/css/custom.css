@@ -230,6 +230,7 @@
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.15), 0px 2px 3px 0px rgba(0,0,0,0.1);
 		text-align: center;
+		margin: auto;
 		/*width: 100%;*/
 	}
 
@@ -278,7 +279,6 @@
 
 		.wrapper.first {
 			padding-top: 12em;
-			box-shadow: 0 5px 5px #999;
 		}
 
 		/* top */
@@ -604,3 +604,12 @@
 .partner:hover a {
 	text-decoration: none;
 }
+.icon.major img{
+	width: 40px;
+	vertical-align: middle;
+	margin-top: -8px;
+}
+.partners {
+	color: #ddd;
+}
+
