@@ -37,6 +37,12 @@
         width: 100% !important;
     }
 
+    .commit-wrapper {
+        width: 100% !important;
+    }
+    .nav {
+        text-align: left;
+    }
 }
 
 

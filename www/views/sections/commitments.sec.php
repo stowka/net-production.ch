@@ -6,16 +6,18 @@
 	 */
 ?>
 <!-- Highlights -->
-<section class="wrapper style1" id="commitments">
+<section class="wrapper style1" id="commitments" style="box-shadow: inset 0px 5px 5px #999, inset 0px -5px 5px #999;">
 	<div class="container">
-		<div class="row 400%">
+		<div class="row 400%" style="display: inline-block; margin: auto">
 			<?php foreach ($commitments as $commitment) { ?>
-				<section class="3u 8u(narrower)">
-					<table class="table">					
+				<section class="3u 10u(narrower) commit-wrapper">
+					<table class="commitments">					
 						<thead>
 							<tr>
 								<th class="text-center">
-									<img style="width:80px; height:90px;" src="global/img/icons/<?php echo $commitment->getPicture(); ?>" alt="<?php echo $commitment->getPicture()?>">
+									<div class="icon major">
+									<img  src="global/img/icons/<?php echo $commitment->getPicture(); ?>" alt="<?php echo $commitment->getPicture()?>">
+									</div>
 									<h3><?php echo $commitment->getTitle(); ?></h3>
 								</th>
 							</tr>
