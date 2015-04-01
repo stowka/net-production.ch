@@ -6,7 +6,7 @@
 	 */
 ?>
 <!-- Highlights -->
-<section class="wrapper style1" id="commitments">
+<section class="wrapper style1" id="commitments" style="box-shadow: inset 0px 5px 5px #999, inset 0px -5px 5px #999;">
 	<div class="container">
 		<div class="row 400%" style="display: inline-block; margin: auto">
 			<?php foreach ($commitments as $commitment) { ?>

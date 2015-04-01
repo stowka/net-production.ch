@@ -612,4 +612,6 @@
 .partners {
 	color: #ddd;
 }
-
+header img {
+	max-width: 500px;
+}
