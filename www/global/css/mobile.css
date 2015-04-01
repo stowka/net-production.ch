@@ -128,4 +128,11 @@
             padding-bottom: 50px;
             text-align: center;
         }
+        .partner {
+            text-align: center;
+            margin: 30px auto;
+        }
+        .partner img {
+            max-width: 80%;
+        }
     }

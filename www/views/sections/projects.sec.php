@@ -2,8 +2,7 @@
 	<div class="wrapper style3" id="projects">
 		<article id="portfolio">
 			<header>
-				<h2>Posuere quis curae vis odio aliquet.</h2>
-				<p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat lorem ipsum dolore.</p>
+				<h2>Portfolio</h2>
 			</header>
 			<div class="main container">
 				<ul id="og-grid" class="og-grid">

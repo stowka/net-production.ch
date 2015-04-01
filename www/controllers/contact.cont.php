@@ -1,9 +1,11 @@
 <?php
 	/**
 	 * Default home front controller
-	 * @author Antoine De Gieter
+	 * @author Marie Cogis
 	 * @copyright Net Production Köbe & Co
 	 */
+
+	$right = Vocabulary::getMenu("right", $lang);
 	
 
     	if( isset($_POST['name']) && !empty($_POST['name'])

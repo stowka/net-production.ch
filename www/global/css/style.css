@@ -360,6 +360,7 @@
 
 		.icon > .label {
 			display: none;
+			text-decoration: none !important;
 		}
 
 		.icon.major {
@@ -900,7 +901,7 @@
 
 		/*.wrapper.style2 {
 			background-color: #fff;
-			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");
+			background-image: url("images/bg02.png"), url("images/bg03.png"), url("images/bg01.png");*/
 			background-position: top left,						bottom left,					top left;
 			background-size: 100% 6em,						100% 6em,						auto;
 			background-repeat: no-repeat,						no-repeat,						repeat;
@@ -976,6 +977,7 @@
 
 			#footer .icons a {
 				color: #999999;
+				text-decoration: none;
 			}
 
 				#footer .icons a:hover {

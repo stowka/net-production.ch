@@ -39,12 +39,20 @@
 					$value[$word->getKeyword()] = $word->getValue();
 				}
 			?>
-			<section class="5u 7u(narrower) 12u$(mobilep)">
+			<!--<section class="5u 7u(narrower) 12u$(mobilep)">
 				<h3><?php echo $value['partner']?></h3>
 				<ul class="links">
 					<?php foreach ($partners as $partner): ?>
 						<li><a href="<?php echo $partner->getUrl();?>"><?php echo $partner->getName();?></a></li>
 					<?php endforeach; ?>
+				</ul>
+			</section>-->
+			<section class="5u 7u(narrower) 12u$(mobilep)">
+				<h3><?php echo $value['partner']?></h3>
+				<ul class="links">
+						<li class="partner"><a href="http://invention.ch" target="_blank"><img src="global/img/partners/invention.gif"/></a></li>
+						<li class="partner"><a href="http://www.invention.ch/iromagazine/" target="_blank"><img src="global/img/partners/iro-mag.jpg"/></a></li>
+						<li class="partner"><a href="http://www.cabinetstartup.fr/" target="_blank"><img src="global/img/partners/cab-startup.png"/><h3>Cabinet Start-Up</h3></a></li>
 				</ul>
 			</section>
 
@@ -92,7 +100,7 @@
 		</div>
 	</div>
 
-	<?php includeSection('icons'); ?>
-	<?php includeSection('copyright'); ?>
+	<?php require_once('views/sections/icons.sec.php'); ?>
+	<?php require_once('views/sections/copyright.sec.php'); ?>
 
 </div>
