@@ -595,11 +595,13 @@
 }
 .partner img {
 	max-width: 300px;
+	min-width: 100px;
 	vertical-align: middle;
+	margin: auto;
+	display: block;
 }
 .partner h3 {
-	display: inline-block;
-	margin-left: 20px;
+	text-align: center;
 }
 .partner:hover a {
 	text-decoration: none;
@@ -615,4 +617,22 @@
 header img {
 	width: 500px;
 	max-width: 80%;
+}
+.menu-button {
+	margin-left: 0;
+	margin-right: 0;
+}
+.menu-button b {
+	border: 2px solid #fff;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+	font-size: 0.8em;
+	display: inline-block;
+}
+.menu-button  .selected {
+	border: 2px solid #de5e54;
+}
+.navbar-right {
+	float: right;
 }

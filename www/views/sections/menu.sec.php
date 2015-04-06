@@ -19,7 +19,7 @@
 			<a class="navbar-brand" href="#home">Net Production</a>
 		</div>
 		<!-- /.navbar-collapse -->
-		<div class="collapse navbar-collapse navbar-ex1-collapse">y
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav">
 				<li class="menu-item">
 					<a class="menu menu-icon" href="#<?= $h->getKeyword() ?>">
@@ -47,20 +47,20 @@
 					</a>
 				</li>
 				<li class="navbar-right"> 
-					<a class="menu menu-right" href="?lang=en_UK">
+					<a class="menu menu-right menu-button" href="?lang=en_UK">
 						<?php if($lang == "en_UK"): ?>
 							<b class="selected"> en </b>
 						<?php else : ?>
-							en
+							<b> en </b>
 						<?php endif; ?>
 					</a>
 				</li>
 				<li class="navbar-right"> 
-					<a class="menu menu-right" href="?lang=fr_CH" >
+					<a class="menu menu-right menu-button" href="?lang=fr_CH" >
 						<?php if($lang == "fr_CH"): ?>
 							<b class="selected"> fr </b>
 						<?php else : ?>
-							fr
+							<b> fr </b>
 						<?php endif; ?>
 					</a>
 				</li>
