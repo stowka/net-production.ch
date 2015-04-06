@@ -13,6 +13,7 @@
 	vertical-align: top;
 	min-height: 250px;
 	width: 24%;
+	max-width: 24%;
 }
 
 .og-grid li > a {

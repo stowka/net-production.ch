@@ -43,6 +43,10 @@
     .nav {
         text-align: left;
     }
+    header {
+        text-align: center;
+        margin: -70px auto 50px auto;
+    }
 }
 
 
@@ -140,5 +144,9 @@
         }
         .partner img {
             max-width: 80%;
+        }
+        .menu-item {
+            width: 30%;
+            padding: 0;
         }
     }

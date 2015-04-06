@@ -16,7 +16,7 @@
 	 			<span class="icon-bar"></span>
 	 			<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#home">Net-Production</a>
+			<a class="navbar-brand" href="#home">Net Production</a>
 		</div>
 		<!-- /.navbar-collapse -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">y
