@@ -9,30 +9,7 @@
 <div id="footer">
 	<div class="container" id="contact">
 		<div class="row">
-			<!--<section class="3u 6u(narrower) 12u$(mobilep)">
-				<h3>Augue mi Morbi</h3>
-				<ul class="links">
-					<li><a href="#">Mattis et quis rutrum</a></li>
-					<li><a href="#">Suspendisse amet varius</a></li>
-					<li><a href="#">Sed et dapibus quis</a></li>
-					<li><a href="#">Rutrum accumsan dolor</a></li>
-					<li><a href="#">Mattis rutrum accumsan</a></li>
-					<li><a href="#">Suspendisse varius nibh</a></li>
-					<li><a href="#">Sed et dapibus mattis</a></li>
-				</ul>
-			</section> 
-			<section class="3u 6u$(narrower) 12u$(mobilep)">
-				<h3>Diam Vitae ut Felis</h3>
-				<ul class="links">
-					<li><a href="#">Duis neque nisi dapibus</a></li>
-					<li><a href="#">Sed et dapibus quis</a></li>
-					<li><a href="#">Rutrum accumsan sed</a></li>
-					<li><a href="#">Mattis et sed accumsan</a></li>
-					<li><a href="#">Duis neque nisi sed</a></li>
-					<li><a href="#">Sed et dapibus quis</a></li>
-					<li><a href="#">Rutrum amet varius</a></li>
-				</ul>
-			</section> -->
+
 			<?php
 				$value = Array();
 				foreach ($words as $word) {
@@ -52,7 +29,7 @@
 				<ul class="links">
 						<li class="partner"><a href="http://invention.ch" target="_blank"><img src="global/img/partners/invention.gif"/></a></li>
 						<li class="partner"><a href="http://www.invention.ch/iromagazine/" target="_blank"><img src="global/img/partners/iro-mag.jpg"/></a></li>
-						<li class="partner"><a href="http://www.cabinetstartup.fr/" target="_blank"><img src="global/img/partners/cab-startup.png"/><h3>Cabinet Start-Up</h3></a></li>
+						<li class="partner"><a href="http://www.cabinetstartup.fr/" target="_blank"><img src="global/img/partners/cab-startup.png"/></a></li>
 				</ul>
 			</section>
 
