@@ -27,8 +27,8 @@
 			<section class="5u 7u(narrower) 12u$(mobilep)">
 				<h3 class="partners"><?php echo $value['partner']?></h3>
 				<ul class="links">
-						<li class="partner"><a href="http://invention.ch" target="_blank"><img src="global/img/partners/invention.gif"/></a></li>
-						<li class="partner"><a href="http://www.invention.ch/iromagazine/" target="_blank"><img src="global/img/partners/iro-mag.jpg"/></a></li>
+						<li class="partner"><a href="http://invention.ch" target="_blank"><img src="global/img/partners/invention2.png"/></a></li>
+						<li class="partner"><a href="http://www.invention.ch/iromagazine/" target="_blank"><img src="global/img/partners/iro-mag2.png"/></a></li>
 						<li class="partner"><a href="http://www.cabinetstartup.fr/" target="_blank"><img src="global/img/partners/cab-startup.png"/></a></li>
 				</ul>
 			</section>
