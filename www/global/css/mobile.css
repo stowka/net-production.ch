@@ -88,6 +88,10 @@
     .og-details h3 {
         display: none;
     }
+    .li-project {
+        display: block !important;
+        padding-left: 50px;
+    }
 }
 
 
