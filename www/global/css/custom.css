@@ -643,11 +643,12 @@ header img {
 	margin-left: 0;
 	margin-right: 0;
 }
+
 .menu-button b {
 	border: 2px solid #fff;
 	border-radius: 50px;
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	font-size: 0.8em;
 	display: inline-block;
 }
@@ -657,6 +658,7 @@ header img {
 .navbar-right {
 	float: right;
 }
+
 #footer {
 	box-shadow: 0 0 10px black;
 }
