@@ -6,7 +6,7 @@
 	 */
 
 	# Constants
-	define('DEFAULT_LANGUAGE', 'fr_CH');
+	define('DEFAULT_LANGUAGE', 'fr-CH');
 	define('DEFAULT_TITLE', 'Net Production K&ouml;be &amp; Co');
 
 	define('DEFAULT_ADMIN_EMAIL', 'antoine.degieter@net-production.ch');
