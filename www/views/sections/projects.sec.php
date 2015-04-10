@@ -41,16 +41,16 @@
 									<a data-projects='
 									<div id="carousel-id" class="carousel slide" data-ride="carousel">
 									    <div class="carousel-inner">
-									    	<div class="text-center" style="width: 100%;">
 										    	<?php 
 										    		$j = 0;
 										    		foreach($projects as $project): 
 										    			$j += 1;/**/ ?>
 											        <div class="item <?php if (1 == $j) echo 'active'; ?>">
-											            <img src="global/img/photograph/<?= $project->getPicture() ?>" class="carousel-img">
+											        	<div class="text-center" style="width: 100%;">
+											            	<img src="global/img/photograph/<?= $project->getPicture() ?>" class="carousel-img">
+														</div>
 											        </div>
 												<?php endforeach; ?>
-											</div>
 									    </div>
 									    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 									    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
