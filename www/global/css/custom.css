@@ -523,6 +523,8 @@
 	.mosaique img.carousel-img {
 		width: auto;
 		height: auto;
+		margin: 0px;
+		clear: both;
 	}
 
 	.img-project {
