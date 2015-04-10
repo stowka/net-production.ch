@@ -23,7 +23,7 @@
 		$mail = new PHPMailer();
 
      	$mail->From = 'no-reply@net-production.ch';
-		$mail->FromName = '[Contact] Net Production Köbe & Co';
+		$mail->FromName = '[Contact] Net Production';
 
 		$mail->AddAddress("antoine.degieter@net-production.ch");
 
