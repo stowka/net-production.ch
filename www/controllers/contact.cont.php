@@ -23,7 +23,7 @@
 		$mail = new PHPMailer();
 
      	$mail->From = 'no-reply@net-production.ch';
-		$mail->FromName = '[Contact] Net Production K&ouml;be &amp; Co';
+		$mail->FromName = '[Contact] Net Production Köbe & Co';
 
 		$mail->AddAddress("antoine.degieter@net-production.ch");
 
@@ -31,7 +31,7 @@
 		$mail->IsHTML(true);
 
 		$mail->Subject = utf8_decode($reason);
-		$mail->Body = '<h3>Net Production</h3><h4>Message from ' . utf8_decode($name) . ' (<a href="mailto:' . $email . '">' . $email . '</a>)Tel :' . $phone .'</h4><p>' . nl2br(utf8_decode($message)) . '</p>';
+		$mail->Body = '<h3>Net Production</h3><h4>Message from ' . utf8_decode($name) . ' (<a href="mailto:' . $email . '">' . $email . '</a>)<br>Tel :' . $phone .'</h4><p>' . nl2br(utf8_decode($message)) . '</p>';
 
 		if ($mail->Send())
 			$sent = true;
