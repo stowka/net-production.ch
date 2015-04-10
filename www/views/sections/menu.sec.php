@@ -74,7 +74,7 @@
 		<article class="container" id="top">
 			<div class="row">
 				<div class="4u">
-					<span class="image fit"><img class="moblogo" src="global/img/logos/logo-xl.png" alt="" /></span>
+					<span class="image fit corail"><img class="moblogo" src="global/img/logos/logo-lg.png" alt="" /></span>
 				</div>
 				<div class="8u home-text">
 					<header>

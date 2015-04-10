@@ -47,6 +47,21 @@
         text-align: center;
         margin: -70px auto 50px auto;
     }
+    .image.fit.corail img {
+        max-width: 50% !important; 
+        margin: -120px auto 20px auto
+    }
+    .commitments li {
+        text-align: center;
+        width: 70%;
+        margin: auto;
+    }
+    .commitments  h3 {
+        margin-bottom: 0;
+    }
+    .row > .commit-wrapper {
+        padding: 0;
+    }
 }
 
 
