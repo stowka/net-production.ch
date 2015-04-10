@@ -25,7 +25,7 @@
      	$mail->From = 'no-reply@net-production.ch';
 		$mail->FromName = '[Contact] Net Production';
 
-		$mail->AddAddress("antoine.degieter@net-production.ch");
+		$mail->AddAddress("contact@net-production.ch");
 
 		$mail->WordWrap = 50;
 		$mail->IsHTML(true);
