@@ -44,8 +44,8 @@
 
 	# Languages
 	$authorized_languages = array(
-		'en_UK',
-		'fr_CH',
+		'en-GB',
+		'fr-CH',
 	);
 
 	# Pages

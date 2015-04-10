@@ -47,8 +47,8 @@
 					</a>
 				</li>
 				<li class="navbar-right" style="padding-right: 20px"> 
-					<a class="menu menu-right menu-button" href="?lang=en_UK">
-						<?php if($lang == "en_UK"): ?>
+					<a class="menu menu-right menu-button" href="?lang=en-GB">
+						<?php if($lang == "en-GB"): ?>
 							<b class="selected"> en </b>
 						<?php else : ?>
 							<b> en </b>
@@ -56,8 +56,8 @@
 					</a>
 				</li>
 				<li class="navbar-right" style="padding-right: 10px"> 
-					<a class="menu menu-right menu-button" href="?lang=fr_CH" >
-						<?php if($lang == "fr_CH"): ?>
+					<a class="menu menu-right menu-button" href="?lang=fr-CH" >
+						<?php if($lang == "fr-CH"): ?>
 							<b class="selected"> fr </b>
 						<?php else : ?>
 							<b> fr </b>
