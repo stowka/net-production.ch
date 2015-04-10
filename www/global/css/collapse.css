@@ -31,7 +31,6 @@
 
 .og-grid li.og-expanded > a::after {
 	top: auto;
-	border: solid transparent;
 	text-decoration: none !important;
 	content: " ";
 	height: 0;
@@ -58,6 +57,7 @@
 	text-align: left;
 	height: 0;
 	overflow: hidden;
+	box-shadow: 0 0px 8px #777;
 }
 
 .og-expander-inner {
