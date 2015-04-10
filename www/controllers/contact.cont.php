@@ -18,8 +18,8 @@
 	    	require_once "lib/phpmailer.class.php";
 			$mail = new PHPMailer();
 
-	     	$mail->From = 'contact@net-production.ch';
-			$mail->FromName = '[Contact] Net production';
+	     	$mail->From = 'no-reply@net-production.ch';
+			$mail->FromName = '[Contact] Net Production K&ouml;be &amp; Co';
 
 			$contact_email = isset($_POST['email']);
 			$email = isset($_POST['email']);
@@ -28,15 +28,15 @@
 			$reason = isset($_POST['reason']);
 			$tel = isset($_POST['tel']);
 
-			$mail->AddAddress( $contact_email );
+			$mail->AddAddress("contact@net-production.ch");
 
 			$mail->WordWrap = 50;
-			$mail->IsHTML( true );
+			$mail->IsHTML(true);
 
 			$mail->Subject = $reason;
 			$mail->Body = '<h3>Net Production</h3><h4>Message from ' . utf8_decode( $name ) . ' (<a href="mailto:' . $email . '">' . $email . '</a>)Tel :' . $tel .'</h4><p>' . nl2br( utf8_decode( $text ) ) . '</p>';
 
-			if ( $mail->Send() )
+			if ($mail->Send())
 			$sent = true;
 
     	} 
