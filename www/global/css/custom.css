@@ -520,6 +520,11 @@
 
 	}
 
+	.mosaique img.carousel-img {
+		width: 100%;
+		height: auto;
+	}
+
 	.img-project {
 		display: inline-block;
 		line-height: 0;

@@ -9,15 +9,8 @@
 <div id="footer">
 	<div class="container" id="contact">
 		<div class="row">
-
-			<?php
-				$value = Array();
-				foreach ($words as $word) {
-					$value[$word->getKeyword()] = $word->getValue();
-				}
-			?>
 			<!--<section class="5u 7u(narrower) 12u$(mobilep)">
-				<h3><?php echo $value['partner']?></h3>
+				<h3><?php echo $voc['partner']?></h3>
 				<ul class="links">
 					<?php foreach ($partners as $partner): ?>
 						<li><a href="<?php echo $partner->getUrl();?>"><?php echo $partner->getName();?></a></li>
@@ -25,7 +18,7 @@
 				</ul>
 			</section>-->
 			<section class="5u 7u(narrower) 12u$(mobilep)">
-				<h3 class="partners"><?php echo $value['partner']?></h3>
+				<h3 class="partners"><?php echo $voc['partner']?></h3>
 				<ul class="links">
 						<li class="partner"><a href="http://invention.ch" target="_blank"><img src="global/img/partners/invention2.png"/></a></li>
 						<li class="partner"><a href="http://www.invention.ch/iromagazine/" target="_blank"><img src="global/img/partners/iro-mag2.png"/></a></li>
@@ -34,20 +27,20 @@
 			</section>
 
 			<section class="6u 12u(narrower)">
-				<h3 style="color: #ddd"><?php echo $value['contact'];?></h3>
+				<h3 style="color: #ddd"><?php echo $voc['contact'];?></h3>
 				<form method="post" action="./">
 					<div class="row 50%">
 						<div class="12u">
-							<input type="text" name="name" class="form-control" id="name" style="width: 100%" placeholder="* <?php echo $value['contact-name'];?>" />
+							<input type="text" name="name" class="form-control" id="name" style="width: 100%" placeholder="* <?php echo $voc['contact-name'];?>" />
 						</div>
 					</div>
 					<div class="row 50%">
 						<div class="6u 12u(mobilep)">
-							<input type="email" name="email" class="form-control" placeholder="* <?php echo $value['contact-email'];?>" />
+							<input type="email" name="email" class="form-control" placeholder="* <?php echo $voc['contact-email'];?>" />
 						</div>
 
 						<div class="6u 12u(mobilep)">
-							<input type="tel" name="tel" class="form-control" placeholder="<?php echo $value['contact-phone'];?>" />
+							<input type="tel" name="tel" class="form-control" placeholder="<?php echo $voc['contact-phone'];?>" />
 						</div>
 					</div>
 					<div class="row 50%">
@@ -62,13 +55,13 @@
 					<div id="trait"></div>
 					<div class="row 50%">
 						<div class="12u">
-							<textarea style="width:582px; resize:none;" name="message" class="form-control" placeholder="<?php echo $value['contact-message'];?>" rows="5" id="message" style="resize: none;"></textarea>
+							<textarea style="width:582px; resize:none;" name="message" class="form-control" placeholder="<?php echo $voc['contact-message'];?>" rows="5" id="message" style="resize: none;"></textarea>
 						</div>
 					</div>
 					<div class="row 50%">
 						<div class="12u">
 							<ul class="actions">
-								<li><button type="submit" class="button-plus button-contact"><?php echo $value['contact-send'];?></button></li>
+								<li><button type="submit" class="button-plus button-contact"><?php echo $voc['contact-send'];?></button></li>
 							</ul>
 						</div>
 					</div>
