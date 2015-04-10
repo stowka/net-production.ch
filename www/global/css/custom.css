@@ -61,7 +61,7 @@
 	@media (min-width: 768px) {
 		.quote header {
 			width: 60%; 
-			font-size: 1.2em;
+			font-size: 1em;
 		}
 	}
 	.author {
@@ -213,6 +213,9 @@
 	.button.big {
 		font-size: 1.5em;
 		letter-spacing: -0.025em;
+	}
+	.button-contact {
+		margin-top: 40px;
 	}
 
 	/* box */

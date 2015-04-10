@@ -68,7 +68,7 @@
 					<div class="row 50%">
 						<div class="12u">
 							<ul class="actions">
-								<li><button type="submit" class="button-plus"><?php echo $value['contact-send'];?></button></li>
+								<li><button type="submit" class="button-plus button-contact"><?php echo $value['contact-send'];?></button></li>
 							</ul>
 						</div>
 					</div>

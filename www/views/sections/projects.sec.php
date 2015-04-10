@@ -1,14 +1,14 @@
 <!-- Portfolio -->
 	<div class="wrapper style3" id="projects">
 		<article id="portfolio">
-			<header>
-				<h2>Portfolio</h2>
+			<header style="margin-bottom: 0">
+				<h2 style="margin-bottom: 0">Portfolio</h2>
 			</header>
 			<div class="main container">
 				<ul id="og-grid" class="og-grid">
 					<?php foreach ($types as $type): ?>
 						<?php $projects = Project::getAllByTypeAndLanguage($type->getId(), $lang);?>
-						<li class="4u">
+						<li class="4u polaroid">
 							<a 	
 								data-projects='
 								<?php 

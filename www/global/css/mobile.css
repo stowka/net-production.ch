@@ -62,6 +62,32 @@
     .row > .commit-wrapper {
         padding: 0;
     }
+    .polaroid {
+        width: 220px !important;
+    }
+    .box.style2 {
+        padding: 2em 0;
+        max-width: 100%;
+    }
+    .polaroid img {
+        width: 180px;
+    }
+    #projects.wrapper {
+        padding-bottom: 0;
+    }
+    #team p {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .copyright {
+        width: 60%;
+        margin: 0 auto -20px auto;
+        font-size: 0.8em !important;
+    }
+    .og-details h3 {
+        display: none;
+    }
 }
 
 
