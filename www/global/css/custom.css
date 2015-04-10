@@ -49,6 +49,24 @@
 		margin-bottom: 2.25em;
 		text-align: center;
 	}
+	.quote {
+		text-align: center
+	}
+	.quote header {
+		width: 80%; 
+		display: inline-block;
+		font-size: 0.8em;
+	}
+
+	@media (min-width: 768px) {
+		.quote header {
+			width: 60%; 
+			font-size: 1.2em;
+		}
+	}
+	.author {
+		color: #aaa;
+	}
 
 	/*header h1 {
 		padding: 0 0 2.75em 0;

@@ -46,7 +46,7 @@
 						<img src="global/img/icons/<?= $co->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $co->getValue() ?>
 					</a>
 				</li>
-				<li class="navbar-right"> 
+				<li class="navbar-right" style="padding-right: 20px"> 
 					<a class="menu menu-right menu-button" href="?lang=en_UK">
 						<?php if($lang == "en_UK"): ?>
 							<b class="selected"> en </b>
@@ -55,7 +55,7 @@
 						<?php endif; ?>
 					</a>
 				</li>
-				<li class="navbar-right"> 
+				<li class="navbar-right" style="padding-right: 10px"> 
 					<a class="menu menu-right menu-button" href="?lang=fr_CH" >
 						<?php if($lang == "fr_CH"): ?>
 							<b class="selected"> fr </b>
@@ -74,7 +74,7 @@
 		<article class="container" id="top">
 			<div class="row">
 				<div class="4u">
-					<span class="image fit"><img class="moblogo" src="global/img/logos/logo.png" alt="" /></span>
+					<span class="image fit"><img class="moblogo" src="global/img/logos/logo-xl.png" alt="" /></span>
 				</div>
 				<div class="8u home-text">
 					<header>

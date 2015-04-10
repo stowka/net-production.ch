@@ -92,7 +92,6 @@
 
 	@media (min-width: 768px) {
 		.navbar-nav > li.navbar-right {
-			padding-right: 20px;
 			display: inline-block;
 		}
 
