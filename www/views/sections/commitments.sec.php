@@ -27,7 +27,7 @@
 								<td class="text-left">
 									<ul>
 										<?php $text = str_replace("\n","</li>",str_replace("- ", "<li>", $commitment->getDescription())); ?>
-										<p><?php echo $text; ?></p>
+										<?php echo $text; ?>
 									</ul>
 								</td>
 							</tr>
