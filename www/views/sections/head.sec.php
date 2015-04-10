@@ -41,7 +41,6 @@
 	<script src="global/js/jquery.dropotron.min.js"></script>
 	<script src="global/js/skel.min.js"></script>
 	<script src="global/js/skel-layers.min.js"></script>
-	<script src="global/js/init.js"></script>
 	<script src="global/js/modernizr.custom.js"></script>
 	<script src="global/js/bootstrap.min.js"></script>
 	
