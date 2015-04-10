@@ -20,7 +20,7 @@
 											
 											echo "<li class=\"li-project\" ><a href=\"" . $project -> getUrl() ."\" target=\"_blanck\"><div class=\"img-project square animated\" >",
 											 
-											 "<img src=\"global/img/screenshots/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+											 "<img src=\"global/img/screenshots/mini/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
 											
 											echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
 											"<p class=\"mob-h3-project\">" . $project -> getDescription() . "</p></div>",
