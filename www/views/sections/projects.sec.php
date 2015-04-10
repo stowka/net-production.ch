@@ -64,26 +64,22 @@
 									</a>
 								</li>
 
-							<?php /* CAROUSEL */ ?>
 							<?php else: ?>
 								<li class="4u polaroid">
-									<a data-projects='
-									<div id="carousel-id" class="carousel slide" data-ride="carousel">
-									    <div class="carousel-inner">
-										    	<?php 
-										    		$j = 0;
-										    		foreach($projects as $project): 
-										    			$j += 1;/**/ ?>
-											        <div class="item <?php if (1 == $j) echo 'active'; ?>">
-											        	<div class="text-center" style="width: 100%;">
-											            	<img src="global/img/photograph/<?= $project->getPicture() ?>" class="carousel-img">
-														</div>
-											        </div>
-												<?php endforeach; ?>
-									    </div>
-									    <a class="left carousel-control" href="#carousel-id" data-slide="prev">&lt;</a>
-									    <a class="right carousel-control" href="#carousel-id" data-slide="next">&gt;</a>
-									</div>'
+									<a 	
+										data-projects='
+										<?php 
+										foreach ($projects as $project): 
+											
+											echo "<li class=\"li-project\" ><a class=\"fancybox\" rel=\"group-" . $type->getId() . "\" href=\"global/img/photograph/" . $project->getPicture() . "\" target=\"_blank\"><div class=\"img-project square animated\" >",
+											 
+											 "<img src=\"global/img/photograph/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
+											
+											echo "<div class=\"title-project\" ><h3>" . $project -> getTitle() . "</h3>",
+											"<p class=\"mob-h3-project\">" . $project -> getDescription() . "</p></div>",
+											"</div></a></li>";
+
+										endforeach; ?>'
 										data-largesrc="" 
 										data-title="<?php echo $type->getLabel() ?>">
 											<article class="box style2">
