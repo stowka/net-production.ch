@@ -13,23 +13,23 @@
 	<meta name="google-site-verification" content="3tZXe6vrG3TLMx_55JTmOnHLQSpXmu1NhtQu3d1UgAk">
 
 	<!-- FAVICON -->
-	<link rel="icon" type="image/png" href="global/img/logos/logo-xs.png">
+	<link rel="icon" type="image/png" href="global/img/logos/logo-circle-md.png">
 
 	<!-- STYLESHEETS -->
 
-		<link rel="stylesheet" href="global/css/bootstrap.css">
-		<!-- <link rel="stylesheet" href="global/css/bootstrap-theme.css"> -->
-		<link rel="stylesheet" href="global/css/skel.css">
-		<link rel="stylesheet" href="global/css/style.css">
-		<link rel="stylesheet" href="global/css/style-wide.css">
-		<link rel="stylesheet" href="global/css/custom.css">
-		<link rel="stylesheet" href="global/css/mobile.css">
-		<link rel="stylesheet" href="global/css/collapse.css">
+	<link rel="stylesheet" href="global/css/bootstrap.css">
+	<!-- <link rel="stylesheet" href="global/css/bootstrap-theme.css"> -->
+	<link rel="stylesheet" href="global/css/skel.css">
+	<link rel="stylesheet" href="global/css/style.css">
+	<link rel="stylesheet" href="global/css/style-wide.css">
+	<link rel="stylesheet" href="global/css/custom.css">
+	<link rel="stylesheet" href="global/css/mobile.css">
+	<link rel="stylesheet" href="global/css/collapse.css">
 
 	<!-- FANCYBOX -->
-		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen">
-		<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-buttons.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="global/css/fancybox/jquery.fancybox-thumbs.css" type="text/css" media="screen">
 
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css"><![endif]-->
 		
