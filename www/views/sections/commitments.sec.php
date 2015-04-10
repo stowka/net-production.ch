@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="row 400%" style="display: inline-block; margin: auto">
 			<?php foreach ($commitments as $commitment) { ?>
-				<section class="3u 10u(narrower) commit-wrapper">
+				<section class="4u 10u(narrower) commit-wrapper">
 					<table class="commitments">					
 						<thead>
 							<tr>
@@ -24,7 +24,7 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="text-left">
+								<td class="text-center" style="padding: 4px">
 									<ul>
 										<?php $text = str_replace("\n","</li>",str_replace("- ", "<li>", $commitment->getDescription())); ?>
 										<?php echo $text; ?>
