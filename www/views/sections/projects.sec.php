@@ -52,8 +52,8 @@
 											        </div>
 												<?php endforeach; ?>
 									    </div>
-									    <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-									    <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									    <a class="left carousel-control" href="#carousel-id" data-slide="prev">&lt;</a>
+									    <a class="right carousel-control" href="#carousel-id" data-slide="next">&gt;</a>
 									</div>'
 										data-largesrc="" 
 										data-title="<?php echo $type->getLabel() ?>">

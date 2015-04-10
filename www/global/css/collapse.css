@@ -120,6 +120,7 @@
 
 .og-fullimg {
 	text-align: center;
+	overflow-y: scroll;
 }
 
 .og-fullimg img {
