@@ -85,6 +85,16 @@
         margin: 0 auto -20px auto;
         font-size: 0.8em !important;
     }
+    /*.li-project {
+        display: block !important;
+        padding-left: 50px;
+    }*/
+}
+@media (max-width: 990px) {
+    .li-project {
+        display: block !important;
+        padding-left: 50px;
+    }
     .og-details h3 {
         display: none;
     }
