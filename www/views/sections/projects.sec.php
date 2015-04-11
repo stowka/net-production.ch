@@ -46,7 +46,7 @@
 										<?php 
 										foreach ($projects as $project): 
 											
-											echo "<li class=\"li-project\" ><a class=\"fancybox\" rel=\"group-" . $type->getId() . "\" href=\"global/img/screenshots/mini/" . $project->getPicture() . "\" target=\"_blank\"><div class=\"img-project square animated\" >",
+											echo "<li class=\"li-project\" ><a class=\"fancybox\" rel=\"group-" . $type->getId() . "\" href=\"global/img/screenshots/full/" . str_replace("png", "jpg", str_replace(" ", "%20", $project->getPicture())) . "\" target=\"_blank\"><div class=\"img-project square animated\" >",
 											 
 											 "<img src=\"global/img/screenshots/mini/" . $project->getPicture() . "\" alt=\"" . $project->getPicture() . "\" width=\"30%\">";
 											
