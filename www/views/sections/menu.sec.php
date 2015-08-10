@@ -46,7 +46,7 @@
 						<img src="global/img/icons/<?= $co->getKeyword() ?>.png" width="20px">&nbsp;&nbsp;<?= $co->getValue() ?>
 					</a>
 				</li>
-				<li class="navbar-right" style="padding-right: 20px"> 
+				<li class="navbar-right" style="padding-right: 20px">
 					<a class="menu menu-right menu-button" href="?lang=en-GB">
 						<?php if($lang == "en-GB"): ?>
 							<b class="selected"> en </b>
@@ -55,7 +55,7 @@
 						<?php endif; ?>
 					</a>
 				</li>
-				<li class="navbar-right" style="padding-right: 10px"> 
+				<li class="navbar-right" style="padding-right: 10px">
 					<a class="menu menu-right menu-button" href="?lang=fr-CH" >
 						<?php if($lang == "fr-CH"): ?>
 							<b class="selected"> fr </b>
@@ -81,8 +81,11 @@
 						<img class="moblogo" src="global/img/logos/Logo white_text.png">
 					</header>
 					<?php foreach ($homes as $home): ?>
-						<p id="mobdescr" style="font-size:1.40em;"><?php echo $home->getText(); ?></p>
-					<?php endforeach; ?>	
+						<p id="mobdescr" style="font-size:1.40em;">
+							<h1 id="net-production">Net Production</h1>
+							<?php echo $home->getText(); ?>
+						</p>
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</article>
