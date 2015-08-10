@@ -7,7 +7,7 @@
 
 	# Constants
 	define('DEFAULT_LANGUAGE', 'fr-CH');
-	define('DEFAULT_TITLE', 'Net Production K&ouml;be &amp; Co');
+	define('DEFAULT_TITLE', 'Cr&eacute;ation site internet | Net Production, Lausanne, Nyon, Gen&egrave;ve');
 
 	define('DEFAULT_ADMIN_EMAIL', 'antoine.degieter@net-production.ch');
 	define('DEFAULT_AUTHOR', 'Antoine De Gieter');
@@ -15,7 +15,7 @@
 	define('DEFAULT_CONTACT_EMAIL', 'contact@net-production.ch');
 
 	define('DEFAULT_404_MESSAGE', 'URL not found!');
-	
+
 	/* Uncomment to use the database *
 	define('DEFAULT_MYSQL_HOST', 'to be set');
 	define('DEFAULT_MYSQL_USER', 'to be set');
