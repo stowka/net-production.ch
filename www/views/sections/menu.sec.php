@@ -82,7 +82,7 @@
 					</h1>
 
 					<p id="mobdescr" style="font-size:1.40em; color: white;">
-						<?php echo $home['text']->getText(); ?>
+						<?php echo $homes[0]->getText(); ?>
 					</p>
 				</div>
 			</div>
