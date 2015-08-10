@@ -77,12 +77,13 @@
 					<span class="image fit corail"><img class="moblogo" src="global/img/logos/logo-lg.png" alt="" /></span>
 				</div>
 				<div class="8u home-text">
-					<?php foreach ($homes as $home): ?>
-						<p id="mobdescr" style="font-size:1.40em; color: white;">
-							<h1 id="net-production">Net Production</h1>
-							<?php echo $home->getText(); ?>
-						</p>
-					<?php endforeach; ?>
+					<h1 id="net-production">
+						Net Production
+					</h1>
+
+					<p id="mobdescr" style="font-size:1.40em; color: white;">
+						<?php echo $home[0]->getText(); ?>
+					</p>
 				</div>
 			</div>
 		</article>
