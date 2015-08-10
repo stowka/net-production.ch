@@ -7,7 +7,7 @@
 	License: pixelarity.com/license
 */
 
-/*	@font-face{ 
+/*	@font-face{
 		font-family: 'Lato';
 		src: url(../fonts/Lato.ttf) format('truetype');
 	} */
@@ -141,7 +141,7 @@
 		text-align: center;
 		color: black;
 		font-weight: bold;
-	} 
+	}
 
 	header.major {
 		text-align: center;
@@ -175,9 +175,9 @@
 			margin-top: 1.75em;
 			margin-bottom: 2.25em;
 			text-align: center;
-		} 
+		}
 
-		
+
 
 		footer > :last-child {
 			margin-bottom: 0;
@@ -774,15 +774,15 @@
 		position: fixed;
 		}
 	}
-	
+
 		.nav ul {
 			margin-bottom: 0;
 		}
-	
+
 		.nav li {
 			display: block;
 		}
-		
+
 		.nav a {
 			position: relative;
 			display: block;
@@ -790,11 +790,11 @@
 			text-decoration: none;
 			outline: 0;
 		}
-		
+
 			.nav a:hover {
 				color: #fff !important;
 			}
-			
+
 			.nav a.active:before {
 				content: '';
 				display: block;
@@ -901,7 +901,7 @@
 
 		.wrapper.style1 {
 			background-color: #fff;
-			background-image: none; 
+			background-image: none;
 		}*/
 
 		/*.wrapper.style2 {
@@ -994,4 +994,13 @@
 			margin-top: 1.5em;
 			text-align: center;
 			font-size: 0.9em;
+		}
+
+		@font-face{
+			font-family: 'Pacifico';
+			src: url(../fonts/Pacifico.ttf) format('truetype');
+		}
+
+		#net-production {
+		    font-family: Pacifico;
 		}
