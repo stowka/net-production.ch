@@ -9,7 +9,7 @@
 <section class="wrapper style2 ">
 	<div class="containerm quote" >
 		<header class="major" style="">
-			<h2>"<?= $voc['quote'] ?>"</h2>
+			<h2 class="quote">"<?= $voc['quote'] ?>"</h2>
 			<p class="author">Bill Gates</p>
 		</header>
 	</div>

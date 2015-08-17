@@ -1005,3 +1005,7 @@
 			font-size: 3.4em;
 			letter-spacing: 8px;
 		}
+
+		.quote {
+			line-height: 16px;
+		}
